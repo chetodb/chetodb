@@ -1,0 +1,52 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import WorkItem from "../components/WorkItem.astro";
+import Philosophy from "../components/Philosophy.astro";
+import Footer from "../components/Footer.astro";
+
+import { projects as consolidatedProjects } from "../data/projects";
+import { useTranslations } from "../i18n/utils";
+
+export function getStaticPaths() {
+    return [{ params: { lang: undefined } }, { params: { lang: "en" } }];
+}
+
+const { lang: langParam } = Astro.params;
+const lang = langParam || "es";
+const t = useTranslations(lang as any);
+const projects = consolidatedProjects[lang] || consolidatedProjects.es;
+---
+
+<Layout lang={lang}>
+    <Navbar />
+    <main class="pt-20">
+        <Hero />
+
+        <SectionHeader
+            id="work"
+            number={t("section.work.num")}
+            title={t("section.work.title")}
+            subtitle={t("section.work.date")}
+        />
+
+        <section class="max-w-360 mx-auto border-x border-white/5">
+            <div class="grid grid-cols-1">
+                {projects.map((item) => <WorkItem {...item} />)}
+            </div>
+        </section>
+
+        <SectionHeader
+            id="philosophy"
+            number={t("section.philosophy.num")}
+            title={t("section.philosophy.title")}
+            subtitle={t("section.philosophy.subtitle")}
+        />
+
+        <Philosophy />
+
+        <Footer />
+    </main>
+</Layout>
