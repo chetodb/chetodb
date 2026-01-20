@@ -9,6 +9,7 @@ import Footer from "../components/layout/Footer.astro";
 
 import { projects as consolidatedProjects } from "../data/projects";
 import { useTranslations } from "../i18n/utils";
+import { ui } from "../i18n/ui";
 
 export function getStaticPaths() {
     return [{ params: { lang: undefined } }, { params: { lang: "en" } }];
@@ -16,7 +17,7 @@ export function getStaticPaths() {
 
 const { lang: langParam } = Astro.params;
 const lang = langParam || "es";
-const t = useTranslations(lang as any);
+const t = useTranslations(lang as keyof typeof ui);
 const projects = consolidatedProjects[lang] || consolidatedProjects.es;
 ---
 
