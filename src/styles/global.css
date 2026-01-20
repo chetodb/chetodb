@@ -1,62 +1,67 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #ffffff;
-  --color-background-light: #f5f5f5;
-  --color-background-dark: #050A14;
-  --color-background-card: #0A1120;
+    --color-primary: #ffffff;
+    --color-background-light: #f5f5f5;
+    --color-background-dark: #050a14;
+    --color-background-card: #0a1120;
 
-  --font-display: "Inter", sans-serif;
+    --font-display: "Inter", sans-serif;
 
-  --radius-none: 0px;
-  --radius-lg: 2px;
-  --radius-xl: 4px;
+    --radius-none: 0px;
+    --radius-lg: 2px;
+    --radius-xl: 4px;
 }
 
 @layer base {
-  body {
-    @apply bg-background-light dark:bg-background-dark text-black dark:text-white selection:bg-white selection:text-black font-display antialiased overflow-x-hidden;
-  }
+    body {
+        @apply bg-background-light dark:bg-background-dark text-black dark:text-white selection:bg-white selection:text-black font-display antialiased overflow-x-hidden;
+    }
 
-  ::-webkit-scrollbar {
-    width: 6px;
-  }
+    ::-webkit-scrollbar {
+        width: 6px;
+    }
 
-  ::-webkit-scrollbar-track {
-    background: #050A14;
-  }
+    ::-webkit-scrollbar-track {
+        background: #050a14;
+    }
 
-  ::-webkit-scrollbar-thumb {
-    background: #333;
-  }
+    ::-webkit-scrollbar-thumb {
+        background: #333;
+    }
 }
 
 @layer utilities {
-  .grid-line {
-    border: 0.5px solid rgba(255, 255, 255, 0.05);
-  }
+    .grid-line {
+        border: 0.5px solid rgba(255, 255, 255, 0.05);
+    }
 
-  .text-huge {
-    font-size: clamp(3.5rem, 9vw, 8.5rem);
-    line-height: 0.85;
-    letter-spacing: -0.04em;
-  }
+    .text-huge {
+        font-size: clamp(3.5rem, 9vw, 8.5rem);
+        line-height: 0.85;
+        letter-spacing: -0.04em;
+    }
 
-  .watermark-d {
-    position: absolute;
-    right: -10%;
-    bottom: -20%;
-    font-size: 40rem;
-    font-weight: 900;
-    opacity: 0.03;
-    pointer-events: none;
-    z-index: 0;
-    line-height: 1;
-  }
+    .watermark-d {
+        position: absolute;
+        right: -10%;
+        bottom: -20%;
+        font-size: 40rem;
+        font-weight: 900;
+        opacity: 0.03;
+        pointer-events: none;
+        z-index: 0;
+        line-height: 1;
+    }
 
-  .bg-grid-pattern {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255, 255, 255, 0.3) 1px, transparent 1px);
-    background-size: 40px 40px;
-  }
+    .bg-grid-pattern {
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.3) 1px, transparent 1px),
+            linear-gradient(
+                90deg,
+                rgba(255, 255, 255, 0.3) 1px,
+                transparent 1px
+            );
+        background-size: 40px 40px;
+    }
 }
