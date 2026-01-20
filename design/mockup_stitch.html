@@ -80,13 +80,13 @@
     </head>
 
     <body
-        class="bg-background-light dark:bg-background-dark text-black dark:text-white selection:bg-white selection:text-black overflow-x-hidden"
+        class="bg-background-light dark:bg-background-dark overflow-x-hidden text-black selection:bg-white selection:text-black dark:text-white"
     >
         <nav
-            class="fixed top-0 w-full z-50 mix-blend-difference border-b border-white/5 bg-background-dark/80 backdrop-blur-md"
+            class="bg-background-dark/80 fixed top-0 z-50 w-full border-b border-white/5 mix-blend-difference backdrop-blur-md"
         >
             <div
-                class="max-w-[1440px] mx-auto flex items-center justify-between px-6 py-4"
+                class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4"
             >
                 <div class="flex items-center gap-3">
                     <svg
@@ -103,26 +103,26 @@
                     </svg>
                 </div>
                 <div
-                    class="hidden md:flex items-center gap-12 text-[11px] uppercase tracking-[0.2em] font-medium"
+                    class="hidden items-center gap-12 text-[11px] font-medium tracking-[0.2em] uppercase md:flex"
                 >
-                    <a class="hover:opacity-50 transition-opacity" href="#work"
+                    <a class="transition-opacity hover:opacity-50" href="#work"
                         >Selected Work</a
                     >
                     <a
-                        class="hover:opacity-50 transition-opacity"
+                        class="transition-opacity hover:opacity-50"
                         href="#philosophy"
                         >Philosophy</a
                     >
-                    <a class="hover:opacity-50 transition-opacity" href="#stack"
+                    <a class="transition-opacity hover:opacity-50" href="#stack"
                         >Engine</a
                     >
                     <a
-                        class="hover:opacity-50 transition-opacity"
+                        class="transition-opacity hover:opacity-50"
                         href="#contact"
                         >Contact</a
                     >
                     <button
-                        class="bg-white text-black px-4 py-2 hover:bg-transparent hover:text-white border border-white transition-all font-bold"
+                        class="border border-white bg-white px-4 py-2 font-bold text-black transition-all hover:bg-transparent hover:text-white"
                     >
                         RESUME.PDF
                     </button>
@@ -131,7 +131,7 @@
         </nav>
         <main class="pt-20">
             <section
-                class="min-h-[92vh] flex flex-col justify-end px-6 py-20 max-w-[1440px] mx-auto border-x border-white/5 relative overflow-hidden"
+                class="relative mx-auto flex min-h-[92vh] max-w-[1440px] flex-col justify-end overflow-hidden border-x border-white/5 px-6 py-20"
             >
                 <div
                     class="absolute inset-0 z-0 opacity-[0.03]"
@@ -149,25 +149,25 @@
                         background-size: 40px 40px;
                     "
                 ></div>
-                <div class="mb-16 relative z-10">
+                <div class="relative z-10 mb-16">
                     <div
-                        class="inline-flex items-center gap-2 px-3 py-1 border border-white/10 mb-8 bg-white/5 backdrop-blur-sm"
+                        class="mb-8 inline-flex items-center gap-2 border border-white/10 bg-white/5 px-3 py-1 backdrop-blur-sm"
                     >
                         <span class="relative flex h-2 w-2">
                             <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"
+                                class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"
                             ></span>
                             <span
-                                class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"
+                                class="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"
                             ></span>
                         </span>
                         <span
-                            class="text-[10px] uppercase tracking-widest font-bold text-emerald-400"
+                            class="text-[10px] font-bold tracking-widest text-emerald-400 uppercase"
                             >System Design &amp; Architecture</span
                         >
                     </div>
                     <h1
-                        class="text-huge font-black tracking-tighter uppercase max-w-7xl"
+                        class="text-huge max-w-7xl font-black tracking-tighter uppercase"
                     >
                         Architecting<br />Robust Systems<br /><span
                             class="text-white/30"
@@ -176,32 +176,32 @@
                     </h1>
                 </div>
                 <div
-                    class="flex flex-col md:flex-row justify-between items-end gap-12 border-t border-white/10 pt-12 relative z-10"
+                    class="relative z-10 flex flex-col items-end justify-between gap-12 border-t border-white/10 pt-12 md:flex-row"
                 >
                     <p
-                        class="max-w-2xl text-lg md:text-2xl text-white/70 leading-relaxed font-light"
+                        class="max-w-2xl text-lg leading-relaxed font-light text-white/70 md:text-2xl"
                     >
                         Senior Fullstack Backend Engineer. I design distributed
                         architectures that prioritize
-                        <span class="text-white font-medium"
+                        <span class="font-medium text-white"
                             >high availability</span
                         >,
-                        <span class="text-white font-medium"
+                        <span class="font-medium text-white"
                             >fault tolerance</span
                         >, and
-                        <span class="text-white font-medium"
+                        <span class="font-medium text-white"
                             >backend integrity</span
                         >
                         under load.
                     </p>
                     <div class="flex gap-4">
                         <a
-                            class="group flex items-center gap-4 bg-white text-black px-8 py-6 font-bold uppercase tracking-widest text-sm hover:bg-white/90 transition-all duration-300"
+                            class="group flex items-center gap-4 bg-white px-8 py-6 text-sm font-bold tracking-widest text-black uppercase transition-all duration-300 hover:bg-white/90"
                             href="#work"
                         >
                             View Case Studies
                             <span
-                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
+                                class="material-symbols-outlined transition-transform group-hover:translate-x-1"
                                 >arrow_forward</span
                             >
                         </a>
@@ -209,96 +209,96 @@
                 </div>
             </section>
             <section
-                class="border-y border-white/10 bg-background-card"
+                class="bg-background-card border-y border-white/10"
                 id="work"
             >
                 <div
-                    class="max-w-[1440px] mx-auto px-6 py-8 flex justify-between items-center"
+                    class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-8"
                 >
                     <h2
-                        class="text-xs uppercase tracking-[0.4em] font-black text-white/50 flex items-center gap-4"
+                        class="flex items-center gap-4 text-xs font-black tracking-[0.4em] text-white/50 uppercase"
                     >
-                        <span class="block w-2 h-2 bg-white/50"></span>
+                        <span class="block h-2 w-2 bg-white/50"></span>
                         01 / Selected Technical Case Studies
                     </h2>
-                    <span class="text-[10px] text-white/30 font-mono"
+                    <span class="font-mono text-[10px] text-white/30"
                         >EST. 2024</span
                     >
                 </div>
             </section>
-            <section class="max-w-[1440px] mx-auto border-x border-white/5">
+            <section class="mx-auto max-w-[1440px] border-x border-white/5">
                 <div class="grid grid-cols-1">
                     <div
-                        class="group border-b border-white/10 flex flex-col md:flex-row items-stretch hover:bg-white/5 transition-colors duration-300"
+                        class="group flex flex-col items-stretch border-b border-white/10 transition-colors duration-300 hover:bg-white/5 md:flex-row"
                     >
                         <div
-                            class="w-full md:w-40 border-r border-white/10 p-8 flex items-start justify-center text-5xl font-black text-white/20 group-hover:text-white transition-colors"
+                            class="flex w-full items-start justify-center border-r border-white/10 p-8 text-5xl font-black text-white/20 transition-colors group-hover:text-white md:w-40"
                         >
                             01
                         </div>
                         <div class="flex-1 p-8 md:p-12">
                             <div
-                                class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8"
+                                class="mb-8 flex flex-col justify-between gap-6 md:flex-row md:items-center"
                             >
                                 <h3
-                                    class="text-4xl font-black uppercase tracking-tighter text-white"
+                                    class="text-4xl font-black tracking-tighter text-white uppercase"
                                 >
                                     High-load API Gateway
                                 </h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Node.js</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Redis</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >AWS</span
                                     >
                                 </div>
                             </div>
                             <div
-                                class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 border-y border-white/5 py-6"
+                                class="mb-8 grid grid-cols-2 gap-6 border-y border-white/5 py-6 md:grid-cols-3"
                             >
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Throughput</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >100k RPS</span
                                     >
                                 </div>
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Latency (p99)</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >&lt; 10ms</span
                                     >
                                 </div>
                                 <div class="hidden md:block">
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Uptime</span
                                     >
                                     <div
-                                        class="w-full bg-white/10 h-1 mt-3 overflow-hidden"
+                                        class="mt-3 h-1 w-full overflow-hidden bg-white/10"
                                     >
                                         <div
-                                            class="bg-emerald-500 h-full w-[99.99%]"
+                                            class="h-full w-[99.99%] bg-emerald-500"
                                         ></div>
                                     </div>
                                 </div>
                             </div>
                             <p
-                                class="text-white/60 max-w-3xl mb-8 leading-relaxed text-lg font-light"
+                                class="mb-8 max-w-3xl text-lg leading-relaxed font-light text-white/60"
                             >
                                 Engineered a custom gateway solution
                                 implementing advanced rate limiting, circuit
@@ -306,7 +306,7 @@
                                 server load.
                             </p>
                             <a
-                                class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white hover:text-emerald-400 border-b border-white/20 hover:border-emerald-400 pb-1 transition-colors"
+                                class="inline-flex items-center gap-2 border-b border-white/20 pb-1 text-xs font-black tracking-widest text-white uppercase transition-colors hover:border-emerald-400 hover:text-emerald-400"
                                 href="#"
                             >
                                 Case Study
@@ -316,11 +316,11 @@
                             </a>
                         </div>
                         <div
-                            class="hidden lg:flex w-80 p-8 border-l border-white/10 flex-col justify-between bg-white/[0.02]"
+                            class="hidden w-80 flex-col justify-between border-l border-white/10 bg-white/[0.02] p-8 lg:flex"
                         >
                             <div>
                                 <div
-                                    class="text-[10px] font-black uppercase mb-4 text-emerald-500"
+                                    class="mb-4 text-[10px] font-black text-emerald-500 uppercase"
                                 >
                                     Challenge
                                 </div>
@@ -331,86 +331,86 @@
                                     volatile traffic spikes without degradation.
                                 </div>
                             </div>
-                            <div class="mt-8 pt-8 border-t border-white/10">
+                            <div class="mt-8 border-t border-white/10 pt-8">
                                 <div
-                                    class="text-[10px] uppercase text-white/30 mb-2"
+                                    class="mb-2 text-[10px] text-white/30 uppercase"
                                 >
                                     System Load
                                 </div>
-                                <div class="flex gap-1 h-8 items-end">
-                                    <div class="w-2 bg-white/20 h-[40%]"></div>
-                                    <div class="w-2 bg-white/20 h-[60%]"></div>
+                                <div class="flex h-8 items-end gap-1">
+                                    <div class="h-[40%] w-2 bg-white/20"></div>
+                                    <div class="h-[60%] w-2 bg-white/20"></div>
                                     <div
-                                        class="w-2 bg-emerald-500 h-[90%] animate-pulse"
+                                        class="h-[90%] w-2 animate-pulse bg-emerald-500"
                                     ></div>
-                                    <div class="w-2 bg-white/20 h-[50%]"></div>
-                                    <div class="w-2 bg-white/20 h-[70%]"></div>
-                                    <div class="w-2 bg-white/20 h-[45%]"></div>
+                                    <div class="h-[50%] w-2 bg-white/20"></div>
+                                    <div class="h-[70%] w-2 bg-white/20"></div>
+                                    <div class="h-[45%] w-2 bg-white/20"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div
-                        class="group border-b border-white/10 flex flex-col md:flex-row items-stretch hover:bg-white/5 transition-colors duration-300"
+                        class="group flex flex-col items-stretch border-b border-white/10 transition-colors duration-300 hover:bg-white/5 md:flex-row"
                     >
                         <div
-                            class="w-full md:w-40 border-r border-white/10 p-8 flex items-start justify-center text-5xl font-black text-white/20 group-hover:text-white transition-colors"
+                            class="flex w-full items-start justify-center border-r border-white/10 p-8 text-5xl font-black text-white/20 transition-colors group-hover:text-white md:w-40"
                         >
                             02
                         </div>
                         <div class="flex-1 p-8 md:p-12">
                             <div
-                                class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8"
+                                class="mb-8 flex flex-col justify-between gap-6 md:flex-row md:items-center"
                             >
                                 <h3
-                                    class="text-4xl font-black uppercase tracking-tighter text-white"
+                                    class="text-4xl font-black tracking-tighter text-white uppercase"
                                 >
                                     Distributed Microservices
                                 </h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Go</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >K8s</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >gRPC</span
                                     >
                                 </div>
                             </div>
                             <div
-                                class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 border-y border-white/5 py-6"
+                                class="mb-8 grid grid-cols-2 gap-6 border-y border-white/5 py-6 md:grid-cols-3"
                             >
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Services</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >50+ Nodes</span
                                     >
                                 </div>
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Sync Model</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >Eventual</span
                                     >
                                 </div>
                                 <div class="hidden md:block">
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Health</span
                                     >
-                                    <div class="flex gap-1 mt-3">
+                                    <div class="mt-3 flex gap-1">
                                         <div
                                             class="h-1.5 w-1.5 rounded-full bg-emerald-500"
                                         ></div>
@@ -430,7 +430,7 @@
                                 </div>
                             </div>
                             <p
-                                class="text-white/60 max-w-3xl mb-8 leading-relaxed text-lg font-light"
+                                class="mb-8 max-w-3xl text-lg leading-relaxed font-light text-white/60"
                             >
                                 Orchestrating services across multi-region
                                 clusters. Focused on automated fault tolerance,
@@ -438,7 +438,7 @@
                                 discovery.
                             </p>
                             <a
-                                class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white hover:text-emerald-400 border-b border-white/20 hover:border-emerald-400 pb-1 transition-colors"
+                                class="inline-flex items-center gap-2 border-b border-white/20 pb-1 text-xs font-black tracking-widest text-white uppercase transition-colors hover:border-emerald-400 hover:text-emerald-400"
                                 href="#"
                             >
                                 Technical Specs
@@ -448,11 +448,11 @@
                             </a>
                         </div>
                         <div
-                            class="hidden lg:flex w-80 p-8 border-l border-white/10 flex-col justify-between bg-white/[0.02]"
+                            class="hidden w-80 flex-col justify-between border-l border-white/10 bg-white/[0.02] p-8 lg:flex"
                         >
                             <div>
                                 <div
-                                    class="text-[10px] font-black uppercase mb-4 text-emerald-500"
+                                    class="mb-4 text-[10px] font-black text-emerald-500 uppercase"
                                 >
                                     Orchestration
                                 </div>
@@ -464,14 +464,14 @@
                                     environments.
                                 </div>
                             </div>
-                            <div class="mt-8 pt-8 border-t border-white/10">
+                            <div class="mt-8 border-t border-white/10 pt-8">
                                 <div
-                                    class="text-[10px] uppercase text-white/30 mb-2"
+                                    class="mb-2 text-[10px] text-white/30 uppercase"
                                 >
                                     Network Topology
                                 </div>
                                 <div
-                                    class="relative h-8 w-full border border-white/10 bg-black/50 overflow-hidden"
+                                    class="relative h-8 w-full overflow-hidden border border-white/10 bg-black/50"
                                 >
                                     <div
                                         class="absolute inset-0 flex items-center justify-around opacity-30"
@@ -481,94 +481,94 @@
                                         ></div>
                                     </div>
                                     <div
-                                        class="absolute top-1/2 left-1/4 w-2 h-2 bg-emerald-500 rounded-full -translate-y-1/2"
+                                        class="absolute top-1/2 left-1/4 h-2 w-2 -translate-y-1/2 rounded-full bg-emerald-500"
                                     ></div>
                                     <div
-                                        class="absolute top-1/2 left-1/2 w-2 h-2 bg-emerald-500 rounded-full -translate-y-1/2"
+                                        class="absolute top-1/2 left-1/2 h-2 w-2 -translate-y-1/2 rounded-full bg-emerald-500"
                                     ></div>
                                     <div
-                                        class="absolute top-1/2 right-1/4 w-2 h-2 bg-emerald-500 rounded-full -translate-y-1/2"
+                                        class="absolute top-1/2 right-1/4 h-2 w-2 -translate-y-1/2 rounded-full bg-emerald-500"
                                     ></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div
-                        class="group border-b border-white/10 flex flex-col md:flex-row items-stretch hover:bg-white/5 transition-colors duration-300"
+                        class="group flex flex-col items-stretch border-b border-white/10 transition-colors duration-300 hover:bg-white/5 md:flex-row"
                     >
                         <div
-                            class="w-full md:w-40 border-r border-white/10 p-8 flex items-start justify-center text-5xl font-black text-white/20 group-hover:text-white transition-colors"
+                            class="flex w-full items-start justify-center border-r border-white/10 p-8 text-5xl font-black text-white/20 transition-colors group-hover:text-white md:w-40"
                         >
                             03
                         </div>
                         <div class="flex-1 p-8 md:p-12">
                             <div
-                                class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8"
+                                class="mb-8 flex flex-col justify-between gap-6 md:flex-row md:items-center"
                             >
                                 <h3
-                                    class="text-4xl font-black uppercase tracking-tighter text-white"
+                                    class="text-4xl font-black tracking-tighter text-white uppercase"
                                 >
                                     Real-time Data Pipeline
                                 </h3>
                                 <div class="flex flex-wrap gap-2">
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Python</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Kafka</span
                                     >
                                     <span
-                                        class="px-3 py-1 bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-wider text-white/80"
+                                        class="border border-white/10 bg-white/5 px-3 py-1 text-[10px] font-bold tracking-wider text-white/80 uppercase"
                                         >Postgres</span
                                     >
                                 </div>
                             </div>
                             <div
-                                class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-8 border-y border-white/5 py-6"
+                                class="mb-8 grid grid-cols-2 gap-6 border-y border-white/5 py-6 md:grid-cols-3"
                             >
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Daily Data</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >5TB+</span
                                     >
                                 </div>
                                 <div>
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Processing</span
                                     >
                                     <span
-                                        class="text-xl font-mono text-emerald-400"
+                                        class="font-mono text-xl text-emerald-400"
                                         >&lt; 100ms</span
                                     >
                                 </div>
                                 <div class="hidden md:block">
                                     <span
-                                        class="text-[10px] uppercase text-white/40 tracking-widest block mb-2"
+                                        class="mb-2 block text-[10px] tracking-widest text-white/40 uppercase"
                                         >Buffer</span
                                     >
-                                    <div class="w-full bg-white/10 h-1 mt-3">
+                                    <div class="mt-3 h-1 w-full bg-white/10">
                                         <div
-                                            class="bg-emerald-500 h-full w-[25%]"
+                                            class="h-full w-[25%] bg-emerald-500"
                                         ></div>
                                     </div>
                                 </div>
                             </div>
                             <p
-                                class="text-white/60 max-w-3xl mb-8 leading-relaxed text-lg font-light"
+                                class="mb-8 max-w-3xl text-lg leading-relaxed font-light text-white/60"
                             >
                                 Implementation of dead-letter queues and
                                 massive-scale data ingestion patterns. Optimized
                                 specifically for time-series telemetry data.
                             </p>
                             <a
-                                class="inline-flex items-center gap-2 text-xs font-black uppercase tracking-widest text-white hover:text-emerald-400 border-b border-white/20 hover:border-emerald-400 pb-1 transition-colors"
+                                class="inline-flex items-center gap-2 border-b border-white/20 pb-1 text-xs font-black tracking-widest text-white uppercase transition-colors hover:border-emerald-400 hover:text-emerald-400"
                                 href="#"
                             >
                                 Architecture
@@ -578,11 +578,11 @@
                             </a>
                         </div>
                         <div
-                            class="hidden lg:flex w-80 p-8 border-l border-white/10 flex-col justify-between bg-white/[0.02]"
+                            class="hidden w-80 flex-col justify-between border-l border-white/10 bg-white/[0.02] p-8 lg:flex"
                         >
                             <div>
                                 <div
-                                    class="text-[10px] font-black uppercase mb-4 text-emerald-500"
+                                    class="mb-4 text-[10px] font-black text-emerald-500 uppercase"
                                 >
                                     Throughput
                                 </div>
@@ -593,14 +593,14 @@
                                     processing high-velocity event streams.
                                 </div>
                             </div>
-                            <div class="mt-8 pt-8 border-t border-white/10">
+                            <div class="mt-8 border-t border-white/10 pt-8">
                                 <div
-                                    class="text-[10px] uppercase text-white/30 mb-2"
+                                    class="mb-2 text-[10px] text-white/30 uppercase"
                                 >
                                     Stream Volume
                                 </div>
                                 <div
-                                    class="flex gap-[2px] items-center opacity-70"
+                                    class="flex items-center gap-[2px] opacity-70"
                                 >
                                     <div class="h-6 w-1 bg-emerald-500"></div>
                                     <div
@@ -626,34 +626,34 @@
                 </div>
             </section>
             <section
-                class="border-y border-white/10 bg-background-card"
+                class="bg-background-card border-y border-white/10"
                 id="philosophy"
             >
                 <div
-                    class="max-w-[1440px] mx-auto px-6 py-8 flex justify-between items-center"
+                    class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-8"
                 >
                     <h2
-                        class="text-xs uppercase tracking-[0.4em] font-black text-white/50 flex items-center gap-4"
+                        class="flex items-center gap-4 text-xs font-black tracking-[0.4em] text-white/50 uppercase"
                     >
-                        <span class="block w-2 h-2 bg-white/50"></span>
+                        <span class="block h-2 w-2 bg-white/50"></span>
                         02 / Engineering Philosophy
                     </h2>
-                    <span class="text-[10px] text-white/30 font-mono"
+                    <span class="font-mono text-[10px] text-white/30"
                         >VALUES</span
                     >
                 </div>
             </section>
             <section
-                class="max-w-[1440px] mx-auto border-x border-white/5 grid grid-cols-1 md:grid-cols-2 relative overflow-hidden"
+                class="relative mx-auto grid max-w-[1440px] grid-cols-1 overflow-hidden border-x border-white/5 md:grid-cols-2"
             >
-                <div class="watermark-d text-white/5 font-display select-none">
+                <div class="watermark-d font-display text-white/5 select-none">
                     D
                 </div>
                 <div
-                    class="p-12 md:p-20 border-b border-white/10 md:border-b-0 md:border-r z-10 relative"
+                    class="relative z-10 border-b border-white/10 p-12 md:border-r md:border-b-0 md:p-20"
                 >
                     <h4
-                        class="text-4xl lg:text-5xl font-black uppercase mb-12 leading-tight"
+                        class="mb-12 text-4xl leading-tight font-black uppercase lg:text-5xl"
                     >
                         "Clean code over
                         <span
@@ -663,23 +663,23 @@
                     </h4>
                     <div class="space-y-8">
                         <p
-                            class="text-white/70 leading-relaxed text-xl font-light"
+                            class="text-xl leading-relaxed font-light text-white/70"
                         >
                             I believe that systems are social constructs as much
                             as technical ones. Code must be readable by humans
                             first and executable by machines second.
                         </p>
                         <p
-                            class="text-white/70 leading-relaxed text-xl font-light"
+                            class="text-xl leading-relaxed font-light text-white/70"
                         >
                             I prioritize
-                            <strong class="text-white font-bold"
+                            <strong class="font-bold text-white"
                                 >observability</strong
                             >,
-                            <strong class="text-white font-bold"
+                            <strong class="font-bold text-white"
                                 >testability</strong
                             >, and
-                            <strong class="text-white font-bold"
+                            <strong class="font-bold text-white"
                                 >deterministic behavior</strong
                             >. A system that isn't measurable is a system that
                             isn't manageable.
@@ -687,46 +687,46 @@
                     </div>
                 </div>
                 <div
-                    class="p-12 md:p-20 z-10 relative bg-white/[0.01]"
+                    class="relative z-10 bg-white/[0.01] p-12 md:p-20"
                     id="stack"
                 >
                     <div>
                         <h5
-                            class="text-[10px] font-black uppercase tracking-[0.3em] mb-12 text-emerald-400 flex items-center gap-3"
+                            class="mb-12 flex items-center gap-3 text-[10px] font-black tracking-[0.3em] text-emerald-400 uppercase"
                         >
-                            <span class="w-6 h-[1px] bg-emerald-400"></span>
+                            <span class="h-[1px] w-6 bg-emerald-400"></span>
                             The Engine Stack
                         </h5>
                         <div class="grid grid-cols-2 gap-16">
                             <div>
                                 <span
-                                    class="block text-xs font-black uppercase border-b border-white/20 pb-4 mb-6 text-white tracking-widest"
+                                    class="mb-6 block border-b border-white/20 pb-4 text-xs font-black tracking-widest text-white uppercase"
                                     >Core Languages</span
                                 >
                                 <ul
-                                    class="space-y-4 text-sm text-white/60 font-mono"
+                                    class="space-y-4 font-mono text-sm text-white/60"
                                 >
                                     <li class="flex items-center gap-3">
                                         <span
-                                            class="w-1.5 h-1.5 bg-emerald-500"
+                                            class="h-1.5 w-1.5 bg-emerald-500"
                                         ></span>
                                         Node.js (TypeScript)
                                     </li>
                                     <li class="flex items-center gap-3">
                                         <span
-                                            class="w-1.5 h-1.5 bg-emerald-500"
+                                            class="h-1.5 w-1.5 bg-emerald-500"
                                         ></span>
                                         Go / Golang
                                     </li>
                                     <li class="flex items-center gap-3">
                                         <span
-                                            class="w-1.5 h-1.5 bg-emerald-500"
+                                            class="h-1.5 w-1.5 bg-emerald-500"
                                         ></span>
                                         Python (FastAPI)
                                     </li>
                                     <li class="flex items-center gap-3">
                                         <span
-                                            class="w-1.5 h-1.5 bg-emerald-500/50"
+                                            class="h-1.5 w-1.5 bg-emerald-500/50"
                                         ></span>
                                         Rust (Tokio)
                                     </li>
@@ -734,11 +734,11 @@
                             </div>
                             <div>
                                 <span
-                                    class="block text-xs font-black uppercase border-b border-white/20 pb-4 mb-6 text-white tracking-widest"
+                                    class="mb-6 block border-b border-white/20 pb-4 text-xs font-black tracking-widest text-white uppercase"
                                     >Infrastructure</span
                                 >
                                 <ul
-                                    class="space-y-4 text-sm text-white/60 font-mono"
+                                    class="space-y-4 font-mono text-sm text-white/60"
                                 >
                                     <li class="flex items-center gap-3">
                                         <span
@@ -772,14 +772,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-16 pt-12 border-t border-white/5">
+                    <div class="mt-16 border-t border-white/5 pt-12">
                         <div
-                            class="text-[10px] font-bold uppercase tracking-widest text-white/30 mb-4"
+                            class="mb-4 text-[10px] font-bold tracking-widest text-white/30 uppercase"
                         >
                             Current Focus
                         </div>
                         <p
-                            class="text-sm text-white/50 leading-relaxed font-mono"
+                            class="font-mono text-sm leading-relaxed text-white/50"
                         >
                             Exploring event-driven architectures with Rust and
                             WebAssembly for edge computing.
@@ -788,57 +788,57 @@
                 </div>
             </section>
             <footer
-                class="bg-white text-background-dark py-32 mt-32 relative overflow-hidden"
+                class="text-background-dark relative mt-32 overflow-hidden bg-white py-32"
                 id="contact"
             >
                 <div
-                    class="max-w-[1440px] mx-auto px-6 text-center relative z-10"
+                    class="relative z-10 mx-auto max-w-[1440px] px-6 text-center"
                 >
                     <h2
-                        class="text-6xl md:text-9xl font-black tracking-tighter uppercase mb-12"
+                        class="mb-12 text-6xl font-black tracking-tighter uppercase md:text-9xl"
                     >
                         Let's build.
                     </h2>
                     <div
-                        class="flex flex-col md:flex-row justify-center gap-8 md:gap-24 uppercase font-black tracking-widest text-sm mb-24"
+                        class="mb-24 flex flex-col justify-center gap-8 text-sm font-black tracking-widest uppercase md:flex-row md:gap-24"
                     >
                         <a
-                            class="group flex items-center justify-center gap-3 hover:text-emerald-600 transition-colors"
+                            class="group flex items-center justify-center gap-3 transition-colors hover:text-emerald-600"
                             href="mailto:hello@architect.dev"
                         >
                             <div
-                                class="bg-black text-white p-2 rounded-full group-hover:bg-emerald-600 transition-colors"
+                                class="rounded-full bg-black p-2 text-white transition-colors group-hover:bg-emerald-600"
                             >
                                 <span
-                                    class="material-symbols-outlined text-sm block"
+                                    class="material-symbols-outlined block text-sm"
                                     >mail</span
                                 >
                             </div>
                             Email Me
                         </a>
                         <a
-                            class="group flex items-center justify-center gap-3 hover:text-emerald-600 transition-colors"
+                            class="group flex items-center justify-center gap-3 transition-colors hover:text-emerald-600"
                             href="#"
                         >
                             <div
-                                class="bg-black text-white p-2 rounded-full group-hover:bg-emerald-600 transition-colors"
+                                class="rounded-full bg-black p-2 text-white transition-colors group-hover:bg-emerald-600"
                             >
                                 <span
-                                    class="material-symbols-outlined text-sm block"
+                                    class="material-symbols-outlined block text-sm"
                                     >code</span
                                 >
                             </div>
                             GitHub
                         </a>
                         <a
-                            class="group flex items-center justify-center gap-3 hover:text-emerald-600 transition-colors"
+                            class="group flex items-center justify-center gap-3 transition-colors hover:text-emerald-600"
                             href="#"
                         >
                             <div
-                                class="bg-black text-white p-2 rounded-full group-hover:bg-emerald-600 transition-colors"
+                                class="rounded-full bg-black p-2 text-white transition-colors group-hover:bg-emerald-600"
                             >
                                 <span
-                                    class="material-symbols-outlined text-sm block"
+                                    class="material-symbols-outlined block text-sm"
                                     >link</span
                                 >
                             </div>
@@ -846,7 +846,7 @@
                         </a>
                     </div>
                     <div
-                        class="border-t border-black/10 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest opacity-50 uppercase font-bold pt-12"
+                        class="flex flex-col items-center justify-between border-t border-black/10 pt-12 text-[10px] font-bold tracking-widest uppercase opacity-50 md:flex-row"
                     >
                         <span
                             >© 2024 Architect Portfolio. All rights
@@ -857,7 +857,7 @@
                     </div>
                 </div>
                 <div
-                    class="absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 via-black to-emerald-500"
+                    class="absolute bottom-0 left-0 h-2 w-full bg-gradient-to-r from-emerald-500 via-black to-emerald-500"
                 ></div>
             </footer>
         </main>

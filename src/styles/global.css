@@ -15,7 +15,7 @@
 
 @layer base {
     body {
-        @apply bg-background-light dark:bg-background-dark text-black dark:text-white selection:bg-white selection:text-black font-display antialiased overflow-x-hidden;
+        @apply bg-background-light dark:bg-background-dark font-display overflow-x-hidden text-black antialiased selection:bg-white selection:text-black dark:text-white;
     }
 
     ::-webkit-scrollbar {
