@@ -1,6 +1,6 @@
 export interface TechLanguage {
     name: string;
-    status: 'active' | 'focus';
+    status: "active" | "focus";
 }
 
 export interface InfrastructureItem {

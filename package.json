@@ -1,25 +1,29 @@
 {
-  "name": "chetodb",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "lint": "eslint .",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
-    "tailwindcss": "^4.1.18"
-  },
-  "devDependencies": {
-    "@astrojs/check": "^0.9.6",
-    "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
-    "eslint-plugin-astro": "^1.5.0",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.0"
-  }
+    "name": "chetodb",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "lint": "eslint .",
+        "format": "prettier --write .",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@tailwindcss/vite": "^4.1.18",
+        "astro": "^5.16.6",
+        "tailwindcss": "^4.1.18"
+    },
+    "devDependencies": {
+        "@astrojs/check": "^0.9.6",
+        "@eslint/js": "^9.39.2",
+        "eslint": "^9.39.2",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-astro": "^1.5.0",
+        "prettier": "^3.8.0",
+        "prettier-plugin-astro": "^0.14.1",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.53.0"
+    }
 }

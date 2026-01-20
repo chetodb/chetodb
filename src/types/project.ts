@@ -8,7 +8,7 @@ export interface Stat {
 export interface Project {
     index: string;
     title: string;
-    visibility: 'public' | 'private';
+    visibility: "public" | "private";
     tags: string[];
     stats: Stat[];
     description: string;
