@@ -6,8 +6,9 @@ export function getLangFromUrl(url: URL) {
     return defaultLang;
 }
 
-export function useTranslations(lang: keyof typeof ui) {
+export function useTranslations(lang: string | undefined) {
+    const validLang = (lang && lang in ui) ? (lang as keyof typeof ui) : defaultLang;
     return function t(key: keyof (typeof ui)[typeof defaultLang]) {
-        return ui[lang][key] || ui[defaultLang][key];
+        return ui[validLang][key] || ui[defaultLang][key];
     };
 }
