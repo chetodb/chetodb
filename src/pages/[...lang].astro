@@ -1,50 +1,25 @@
 ---
-import SectionHeader from "../components/common/SectionHeader.astro";
-import WorkItem from "../components/common/WorkItem.astro";
 import Footer from "../components/layout/Footer.astro";
 import Navbar from "../components/layout/Navbar.astro";
 import Hero from "../components/sections/Hero.astro";
 import Philosophy from "../components/sections/Philosophy.astro";
-import { projects as consolidatedProjects } from "../data/projects";
-import { useTranslations } from "../i18n/utils";
+import SelectedWork from "../components/sections/SelectedWork.astro";
+import { defaultLang } from "../i18n/ui";
 import Layout from "../layouts/Layout.astro";
 
 export function getStaticPaths() {
     return [{ params: { lang: undefined } }, { params: { lang: "en" } }];
 }
 
-const { lang = "es" } = Astro.params;
-const t = useTranslations(lang);
-const projects = consolidatedProjects[lang] || consolidatedProjects.es;
+const { lang = defaultLang } = Astro.params;
 ---
 
 <Layout lang={lang}>
     <Navbar />
     <main class="pt-20">
         <Hero />
-
-        <SectionHeader
-            id="work"
-            number={t("section.work.num")}
-            title={t("section.work.title")}
-            subtitle={t("section.work.date")}
-        />
-
-        <section class="mx-auto max-w-360 border-x border-white/5">
-            <div class="grid grid-cols-1">
-                {projects.map((item) => <WorkItem {...item} />)}
-            </div>
-        </section>
-
-        <SectionHeader
-            id="philosophy"
-            number={t("section.philosophy.num")}
-            title={t("section.philosophy.title")}
-            subtitle={t("section.philosophy.subtitle")}
-        />
-
+        <SelectedWork />
         <Philosophy />
-
         <Footer />
     </main>
 </Layout>
