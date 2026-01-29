@@ -1,0 +1,204 @@
+---
+import { Image } from "astro:assets";
+import logo from "../../assets/logo.svg";
+import { menuItems } from "../../data/menu";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import MobileMenu from "./MobileMenu.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const currentPath = Astro.url.pathname;
+const esUrl =
+    lang === "es" ? currentPath : currentPath.replace(/^\/en/, "") || "/";
+const enUrl =
+    lang === "en"
+        ? currentPath
+        : `/en${currentPath === "/" ? "" : currentPath}`;
+---
+
+<header class="fixed top-0 z-50 w-full">
+    <nav
+        class="bg-background-dark/80 relative z-50 w-full border-b border-white/5 backdrop-blur-md"
+    >
+        <div
+            class="mx-auto flex max-w-360 items-center justify-between px-6 py-2"
+        >
+            <a href="/" class="flex items-center gap-3" aria-label="Inicio">
+                <Image src={logo} alt="Logo" width={56} height={56} />
+            </a>
+
+            <!-- Desktop Menu -->
+            <div
+                class="hidden items-center gap-12 text-[11px] font-medium tracking-[0.2em] uppercase lg:flex"
+            >
+                {
+                    menuItems.map((item) => (
+                        <a
+                            class="transition-colors hover:text-emerald-400"
+                            href={item.href}
+                        >
+                            {t(item.key)}
+                        </a>
+                    ))
+                }
+                <button
+                    class="border border-white bg-white px-4 py-2 font-bold text-black transition-all hover:border-emerald-400 hover:bg-transparent hover:text-emerald-400"
+                >
+                    {t("nav.resume")}
+                </button>
+
+                <!-- Language Switcher -->
+                <div
+                    class="flex items-center gap-2 font-mono text-xs font-bold"
+                >
+                    <!-- ES -->
+                    <a
+                        href={esUrl}
+                        class={`transition-colors ${lang === "es" ? "text-emerald-400" : "text-white/30 hover:text-white"}`}
+                        aria-label="Switch to Spanish"
+                    >
+                        ES
+                    </a>
+
+                    <span class="text-white/20">/</span>
+
+                    <!-- EN -->
+                    <a
+                        href={enUrl}
+                        class={`transition-colors ${lang === "en" ? "text-emerald-400" : "text-white/30 hover:text-white"}`}
+                        aria-label="Switch to English"
+                    >
+                        EN
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Controls -->
+            <div class="flex items-center gap-4 lg:hidden">
+                <div
+                    class="flex items-center gap-2 font-mono text-xs font-bold"
+                >
+                    <!-- ES -->
+                    <a
+                        href={esUrl}
+                        class={`transition-colors ${lang === "es" ? "text-emerald-400" : "text-white/30 hover:text-white"}`}
+                        aria-label="Switch to Spanish"
+                    >
+                        ES
+                    </a>
+
+                    <span class="text-white/20">/</span>
+
+                    <!-- EN -->
+                    <a
+                        href={enUrl}
+                        class={`transition-colors ${lang === "en" ? "text-emerald-400" : "text-white/30 hover:text-white"}`}
+                        aria-label="Switch to English"
+                    >
+                        EN
+                    </a>
+                </div>
+
+                <button
+                    id="menu-toggle"
+                    class="group flex h-10 w-10 flex-col items-center justify-center gap-1.5"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span
+                        class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-hover:bg-emerald-400 group-[.is-open]:translate-y-2 group-[.is-open]:rotate-45 group-[.is-open]:bg-emerald-400"
+                    ></span>
+                    <span
+                        class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-hover:bg-emerald-400 group-[.is-open]:opacity-0"
+                    ></span>
+                    <span
+                        class="block h-0.5 w-6 bg-white transition-all duration-300 ease-in-out group-hover:bg-emerald-400 group-[.is-open]:-translate-y-2 group-[.is-open]:-rotate-45 group-[.is-open]:bg-emerald-400"
+                    ></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <MobileMenu />
+</header>
+
+<script>
+    let cleanup: (() => void) | null = null;
+
+    function initMobileMenu() {
+        if (cleanup) cleanup();
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const mobileLinks = document.querySelectorAll("[data-mobile-link]");
+
+        if (!menuToggle || !mobileMenu) return;
+
+        // --- Menu Logic ---
+        function toggleMenu() {
+            const isOpen = menuToggle?.classList.contains("is-open");
+            if (isOpen) closeMenu();
+            else openMenu();
+        }
+
+        function openMenu() {
+            menuToggle?.classList.add("is-open");
+            menuToggle?.setAttribute("aria-expanded", "true");
+            mobileMenu?.classList.remove("-translate-y-full");
+            mobileMenu?.classList.add("is-open");
+            document.body.style.overflow = "hidden";
+        }
+
+        function closeMenu() {
+            menuToggle?.classList.remove("is-open");
+            menuToggle?.setAttribute("aria-expanded", "false");
+            mobileMenu?.classList.add("-translate-y-full");
+            mobileMenu?.classList.remove("is-open");
+            document.body.style.overflow = "";
+        }
+
+        // --- Event Handlers ---
+        const handleResize = () => {
+            if (
+                window.innerWidth >= 1024 &&
+                menuToggle?.classList.contains("is-open")
+            ) {
+                closeMenu();
+            }
+        };
+
+        const handleKeydown = (e: KeyboardEvent) => {
+            if (
+                e.key === "Escape" &&
+                menuToggle?.classList.contains("is-open")
+            ) {
+                closeMenu();
+            }
+        };
+
+        // --- Event Registration ---
+        menuToggle.addEventListener("click", toggleMenu);
+        window.addEventListener("resize", handleResize);
+        document.addEventListener("keydown", handleKeydown);
+        mobileLinks.forEach((link) =>
+            link.addEventListener("click", closeMenu)
+        );
+
+        // --- Cleanup Function ---
+        cleanup = () => {
+            menuToggle.removeEventListener("click", toggleMenu);
+            window.removeEventListener("resize", handleResize);
+            document.removeEventListener("keydown", handleKeydown);
+            mobileLinks.forEach((link) =>
+                link.removeEventListener("click", closeMenu)
+            );
+
+            document.body.style.overflow = "";
+        };
+    }
+
+    document.addEventListener("astro:page-load", initMobileMenu);
+</script>

@@ -1,0 +1,69 @@
+---
+import { menuItems } from "../../data/menu";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<div
+    id="mobile-menu"
+    class="group/menu bg-background-dark fixed inset-0 z-40 flex -translate-y-full flex-col items-center justify-start pt-32 text-white transition-transform duration-500 ease-in-out lg:hidden"
+>
+    <!-- Vertical Decorative Text -->
+    <div
+        class="pointer-events-none absolute top-40 -right-20 z-0 rotate-90 text-[12rem] leading-none font-black text-white/5 select-none"
+        aria-hidden="true"
+    >
+        NAV
+    </div>
+
+    <nav class="relative z-10 flex w-full max-w-sm flex-col items-start px-6">
+        <span
+            class="mb-8 flex items-center gap-3 text-[10px] font-black tracking-[0.3em] text-white/40 uppercase"
+            aria-hidden="true"
+        >
+            <span class="h-px w-6 bg-white/40"></span>
+            Menu
+        </span>
+
+        <!-- Menu Items -->
+        {
+            menuItems.map((item) => (
+                <a
+                    class="group flex w-full translate-y-8 items-center gap-4 border-b border-white/10 py-6 text-xl font-black tracking-tight uppercase opacity-0 transition-all group-[.is-open]/menu:translate-y-0 group-[.is-open]/menu:opacity-100 hover:text-emerald-400"
+                    href={item.href}
+                    data-mobile-link
+                >
+                    <span class="font-mono text-xs text-white/30 transition-colors group-hover:text-emerald-400">
+                        {item.number}
+                    </span>
+                    <span class="text-white transition-colors group-hover:text-emerald-400">
+                        {t(item.key)}
+                    </span>
+                </a>
+            ))
+        }
+
+        <!-- Resume Link -->
+        <a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-8 flex w-full translate-y-8 items-center justify-center border border-white bg-white py-4 text-sm font-bold tracking-widest text-black uppercase opacity-0 transition-all group-[.is-open]/menu:translate-y-0 group-[.is-open]/menu:opacity-100 hover:border-emerald-400 hover:bg-transparent hover:text-emerald-400"
+            data-mobile-link
+        >
+            {t("nav.resume")}
+        </a>
+    </nav>
+
+    <!-- Decorative Info -->
+    <div
+        class="pointer-events-none absolute bottom-8 left-8 z-0 font-mono text-[10px] text-white/20"
+        aria-hidden="true"
+    >
+        <span class="block">:: PORTFOLIO [v{new Date().getFullYear()}]</span>
+        <span class="block">:: STATUS_ONLINE</span>
+        <span class="mt-2 block">TYPESCRIPT // ASTRO // TAILWIND</span>
+    </div>
+</div>
