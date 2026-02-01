@@ -11,5 +11,15 @@ export default [
     js.configs.recommended,
     ...tseslint.configs.recommended,
     ...eslintPluginAstro.configs.recommended,
+    {
+        files: ["**/*.astro"],
+        languageOptions: {
+            parser: eslintPluginAstro.parser,
+            parserOptions: {
+                parser: tseslint.parser,
+                extraFileExtensions: [".astro"],
+            },
+        },
+    },
     eslintConfigPrettier,
 ];
