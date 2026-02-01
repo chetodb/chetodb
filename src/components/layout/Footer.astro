@@ -1,0 +1,105 @@
+---
+import githubIcon from "../../assets/github.svg";
+import linkedinIcon from "../../assets/linkedin.svg";
+import mailIcon from "../../assets/mail.svg";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<footer
+    class="relative mt-20 flex min-h-screen flex-col items-center justify-between bg-white py-12 text-black md:mt-32 md:py-24"
+    id="contact"
+>
+    <div
+        class="relative z-10 mx-auto flex w-full max-w-[1440px] flex-grow flex-col justify-between px-6"
+    >
+        <div
+            class="flex flex-grow flex-col items-center justify-center text-center"
+        >
+            <!-- Simple Solid Title with fluid scaling -->
+            <h2
+                class="mb-16 text-5xl font-black tracking-tighter uppercase md:mb-24 md:text-8xl lg:text-9xl"
+            >
+                {t("footer.title")}
+            </h2>
+
+            <!-- Refined Social Links -->
+            <div
+                class="flex flex-col items-center gap-14 text-[11px] font-black tracking-[0.3em] uppercase md:text-[13px] lg:flex-row lg:gap-32 lg:text-[14px]"
+            >
+                <a
+                    class="group relative flex flex-col items-center gap-4 transition-transform hover:-translate-y-2"
+                    href="mailto:hola@chetodb.dev"
+                >
+                    <span
+                        class="h-9 w-9 bg-black lg:h-12 lg:w-12"
+                        style={`mask-image: url(${mailIcon.src}); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(${mailIcon.src}); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`}
+                    ></span>
+                    <span class="relative">
+                        EMAIL
+                        <span
+                            class="absolute -bottom-2 left-0 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-full"
+                        ></span>
+                    </span>
+                </a>
+
+                <a
+                    class="group relative flex flex-col items-center gap-4 transition-transform hover:-translate-y-2"
+                    href="https://github.com/chetodb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span
+                        class="h-9 w-9 bg-black lg:h-12 lg:w-12"
+                        style={`mask-image: url(${githubIcon.src}); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(${githubIcon.src}); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`}
+                    ></span>
+                    <span class="relative">
+                        GITHUB
+                        <span
+                            class="absolute -bottom-2 left-0 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-full"
+                        ></span>
+                    </span>
+                </a>
+
+                <a
+                    class="group relative flex flex-col items-center gap-4 transition-transform hover:-translate-y-2"
+                    href="https://linkedin.com/in/chetodb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span
+                        class="h-9 w-9 bg-black lg:h-12 lg:w-12"
+                        style={`mask-image: url(${linkedinIcon.src}); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(${linkedinIcon.src}); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`}
+                    ></span>
+                    <span class="relative">
+                        LINKEDIN
+                        <span
+                            class="absolute -bottom-2 left-0 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-full"
+                        ></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Bottom Footer info -->
+        <div
+            class="mt-32 flex flex-col items-center justify-between gap-6 border-t border-black/5 pt-12 font-mono text-[9px] font-medium tracking-wider text-black/40 uppercase md:grid md:grid-cols-3 md:gap-4 md:text-[10px] lg:gap-0 lg:text-[11px]"
+        >
+            <div
+                class="flex items-center gap-2 whitespace-nowrap md:justify-self-start lg:gap-4"
+            >
+                <span>{t("footer.rights")}</span>
+                <span>&bull;</span>
+                <span>&copy; {new Date().getFullYear()}</span>
+            </div>
+            <span class="whitespace-nowrap md:justify-self-center"
+                >{t("footer.license")}</span
+            >
+            <span class="whitespace-nowrap md:justify-self-end"
+                >{t("footer.location")}</span
+            >
+        </div>
+    </div>
+</footer>
