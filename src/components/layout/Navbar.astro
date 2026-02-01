@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import logo from "../../assets/logo.svg";
 import { menuItems } from "../../data/menu";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
@@ -28,7 +27,11 @@ const enUrl =
             class="mx-auto flex max-w-360 items-center justify-between px-6 py-2"
         >
             <a href="/" class="flex items-center gap-3" aria-label="Inicio">
-                <Image src={logo} alt="Logo" width={56} height={56} />
+                <div
+                    class="h-10 w-10 bg-white transition-colors hover:bg-emerald-400"
+                    style={`mask-image: url(${logo.src}); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(${logo.src}); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`}
+                >
+                </div>
             </a>
 
             <!-- Desktop Menu -->
