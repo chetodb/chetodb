@@ -17,7 +17,10 @@ const enUrl =
         : `/en${currentPath === "/" ? "" : currentPath}`;
 ---
 
-<header class="fixed top-0 z-50 w-full">
+<header
+    id="navbar"
+    class="fixed top-0 z-50 w-full transition-transform duration-300"
+>
     <nav
         class="bg-background-dark/80 relative z-50 w-full border-b border-white/5 backdrop-blur-md"
     >
@@ -128,14 +131,17 @@ const enUrl =
 <script>
     let cleanup: (() => void) | null = null;
 
-    function initMobileMenu() {
+    function initNavbar() {
         if (cleanup) cleanup();
 
+        const navbar = document.getElementById("navbar");
         const menuToggle = document.getElementById("menu-toggle");
         const mobileMenu = document.getElementById("mobile-menu");
         const mobileLinks = document.querySelectorAll("[data-mobile-link]");
 
-        if (!menuToggle || !mobileMenu) return;
+        if (!menuToggle || !mobileMenu || !navbar) return;
+
+        let lastScroll = 0;
 
         // --- Menu Logic ---
         function toggleMenu() {
@@ -160,6 +166,35 @@ const enUrl =
             document.body.style.overflow = "";
         }
 
+        // --- Scroll Logic ---
+        const handleScroll = () => {
+            const currentScroll = window.scrollY;
+            const isMenuOpen = menuToggle.classList.contains("is-open");
+
+            if (isMenuOpen) return;
+
+            if (currentScroll <= 0) {
+                navbar.classList.remove("-translate-y-full");
+                return;
+            }
+
+            if (
+                currentScroll > lastScroll &&
+                !navbar.classList.contains("-translate-y-full") &&
+                currentScroll > 80
+            ) {
+                // scroll down
+                navbar.classList.add("-translate-y-full");
+            } else if (
+                currentScroll < lastScroll &&
+                navbar.classList.contains("-translate-y-full")
+            ) {
+                // scroll up
+                navbar.classList.remove("-translate-y-full");
+            }
+            lastScroll = currentScroll;
+        };
+
         // --- Event Handlers ---
         const handleResize = () => {
             if (
@@ -182,6 +217,7 @@ const enUrl =
         // --- Event Registration ---
         menuToggle.addEventListener("click", toggleMenu);
         window.addEventListener("resize", handleResize);
+        window.addEventListener("scroll", handleScroll, { passive: true });
         document.addEventListener("keydown", handleKeydown);
         mobileLinks.forEach((link) =>
             link.addEventListener("click", closeMenu)
@@ -191,6 +227,7 @@ const enUrl =
         cleanup = () => {
             menuToggle.removeEventListener("click", toggleMenu);
             window.removeEventListener("resize", handleResize);
+            window.removeEventListener("scroll", handleScroll);
             document.removeEventListener("keydown", handleKeydown);
             mobileLinks.forEach((link) =>
                 link.removeEventListener("click", closeMenu)
@@ -200,5 +237,5 @@ const enUrl =
         };
     }
 
-    document.addEventListener("astro:page-load", initMobileMenu);
+    document.addEventListener("astro:page-load", initNavbar);
 </script>
