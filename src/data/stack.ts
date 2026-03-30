@@ -3,34 +3,34 @@ import type { TechStack } from "../types/stack";
 export const stack: Record<string, TechStack> = {
     es: {
         languages: [
-            { name: "Lenguaje Principal", status: "active" },
-            { name: "Lenguaje Secundario", status: "active" },
-            { name: "Framework A", status: "active" },
-            { name: "Tecnolog�a Emergente", status: "focus" },
+            { name: "TypeScript / Node.js", status: "active" },
+            { name: "NestJS", status: "active" },
+            { name: "Python", status: "active" },
+            { name: "Rust", status: "focus" },
         ],
         infrastructure: [
-            { name: "Contenedores", icon: "dns" },
-            { name: "Nube P�blica", icon: "cloud" },
-            { name: "IaC", icon: "terminal" },
-            { name: "Mensajer�a", icon: "hub" },
+            { name: "Docker / Portainer", icon: "dns" },
+            { name: "RabbitMQ / Redis", icon: "hub" },
+            { name: "PostgreSQL", icon: "storage" },
+            { name: "CI/CD · Git", icon: "terminal" },
         ],
         currentFocus:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.",
+            "Diseño de SDKs open source type-safe y automatización de procesos B2B. Explorando Rust para sistemas de alto rendimiento.",
     },
     en: {
         languages: [
-            { name: "Primary Language", status: "active" },
-            { name: "Secondary Language", status: "active" },
-            { name: "Framework A", status: "active" },
-            { name: "Emerging Tech", status: "focus" },
+            { name: "TypeScript / Node.js", status: "active" },
+            { name: "NestJS", status: "active" },
+            { name: "Python", status: "active" },
+            { name: "Rust", status: "focus" },
         ],
         infrastructure: [
-            { name: "Containers", icon: "dns" },
-            { name: "Public Cloud", icon: "cloud" },
-            { name: "IaC", icon: "terminal" },
-            { name: "Messaging", icon: "hub" },
+            { name: "Docker / Portainer", icon: "dns" },
+            { name: "RabbitMQ / Redis", icon: "hub" },
+            { name: "PostgreSQL", icon: "storage" },
+            { name: "CI/CD · Git", icon: "terminal" },
         ],
         currentFocus:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore.",
+            "Building type-safe open source SDKs and automating B2B processes. Exploring Rust for high-performance systems.",
     },
 };
