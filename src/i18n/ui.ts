@@ -30,6 +30,7 @@ export const ui = {
         "section.philosophy.title": "Filosofía de Ingeniería",
         "section.philosophy.subtitle": "VALORES",
         "philosophy.quote": '"Código limpio sobre código ingenioso."',
+        "philosophy.strike": "código ingenioso",
         "philosophy.p1":
             "Creo que los sistemas son constructos sociales tanto como técnicos. El código debe ser legible por humanos primero y ejecutable por máquinas después.",
         "philosophy.p2":
@@ -79,6 +80,7 @@ export const ui = {
         "section.philosophy.title": "Engineering Philosophy",
         "section.philosophy.subtitle": "VALUES",
         "philosophy.quote": '"Clean code over clever code."',
+        "philosophy.strike": "clever code",
         "philosophy.p1":
             "I believe that systems are social constructs as much as technical ones. Code must be readable by humans first and executable by machines second.",
         "philosophy.p2":

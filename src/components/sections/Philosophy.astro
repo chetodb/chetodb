@@ -40,17 +40,23 @@ const currentStack = stackData[lang] ?? stackData["es"];
             class="mb-12 text-4xl leading-tight font-black text-white uppercase lg:text-5xl"
         >
             {
-                t("philosophy.quote")
-                    .split("over")
-                    .map((part, i) =>
-                        i === 0 ? (
-                            part + "over"
-                        ) : (
+                (() => {
+                    const quote = t("philosophy.quote");
+                    const strike = t("philosophy.strike");
+                    const idx = quote.toLowerCase().indexOf(strike.toLowerCase());
+                    if (idx === -1) return quote;
+                    const before = quote.slice(0, idx);
+                    const matched = quote.slice(idx, idx + strike.length);
+                    const after = quote.slice(idx + strike.length);
+                    return (
+                        <>
+                            {before}
                             <span class="mt-2 block text-white/30 line-through decoration-emerald-500 decoration-4">
-                                {part}
+                                {matched}{after}
                             </span>
-                        )
-                    )
+                        </>
+                    );
+                })()
             }
         </h4>
         <div class="space-y-8">
