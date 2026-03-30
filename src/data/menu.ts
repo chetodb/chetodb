@@ -9,8 +9,9 @@ interface MenuItem {
 }
 
 export const menuItems: MenuItem[] = [
-    { key: "nav.work", href: "#work", number: "01" },
-    { key: "nav.philosophy", href: "#philosophy", number: "02" },
-    { key: "nav.stack", href: "#stack", number: "03" },
-    { key: "nav.contact", href: "#contact", number: "04" },
+    { key: "nav.experience", href: "#experience", number: "01" },
+    { key: "nav.work", href: "#work", number: "02" },
+    { key: "nav.philosophy", href: "#philosophy", number: "03" },
+    { key: "nav.stack", href: "#stack", number: "04" },
+    { key: "nav.contact", href: "#contact", number: "05" },
 ];
