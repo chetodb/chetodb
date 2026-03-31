@@ -118,7 +118,7 @@ const langProjects = projects[lang] ?? projects["es"];
                             {project.loadGraph && (
                                 <>
                                     <div class="mb-2 text-[10px] text-white/30 uppercase">
-                                        System Load
+                                        {t("project.visual.load")}
                                     </div>
                                     <div class="flex h-8 items-end gap-1">
                                         <div class="h-[40%] w-2 bg-white/20" />
@@ -133,7 +133,7 @@ const langProjects = projects[lang] ?? projects["es"];
                             {project.streamGraph && (
                                 <>
                                     <div class="mb-2 text-[10px] text-white/30 uppercase">
-                                        Package Activity
+                                        {t("project.visual.activity")}
                                     </div>
                                     <div class="flex items-center gap-[2px] opacity-70">
                                         <div class="h-6 w-1 bg-emerald-500" />
@@ -151,7 +151,7 @@ const langProjects = projects[lang] ?? projects["es"];
                             {project.topology && (
                                 <>
                                     <div class="mb-2 text-[10px] text-white/30 uppercase">
-                                        In Progress
+                                        {t("project.visual.wip")}
                                     </div>
                                     <div class="relative h-8 w-full overflow-hidden border border-white/10 bg-black/50">
                                         <div class="absolute inset-0 flex items-center justify-around opacity-30">
