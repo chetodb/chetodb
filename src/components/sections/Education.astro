@@ -1,0 +1,101 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { education as educationData } from "../../data/education";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const data = educationData[lang] ?? educationData["es"];
+---
+
+<section class="bg-background-card border-y border-white/10" id="education">
+    <div
+        class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-8"
+    >
+        <h2
+            class="flex items-center gap-4 text-xs font-black tracking-[0.4em] text-white/50 uppercase"
+        >
+            <span class="block h-2 w-2 bg-white/50"></span>
+            {t("section.education.num")} / {t("section.education.title")}
+        </h2>
+        <span class="font-mono text-[10px] text-white/30"
+            >{t("section.education.subtitle")}</span
+        >
+    </div>
+</section>
+
+<section class="mx-auto max-w-[1440px] border-x border-white/5">
+    <div class="grid grid-cols-1 md:grid-cols-2 divide-y divide-white/10 md:divide-y-0 md:divide-x md:divide-white/10">
+        <!-- Degrees -->
+        <div class="p-8 md:p-12">
+            <div class="space-y-8">
+                {
+                    data.degrees.map((degree) => (
+                        <div class="border-b border-white/5 pb-8 last:border-0 last:pb-0">
+                            <h3 class="text-base font-black tracking-tight text-white">
+                                {degree.institution}
+                            </h3>
+                            <p class="mt-1 text-sm font-medium text-white/60">
+                                {degree.degree}
+                            </p>
+                            <p class="text-sm text-emerald-400/80">
+                                {degree.field}
+                            </p>
+                            {degree.period && (
+                                <p class="mt-1 font-mono text-[11px] text-white/30">
+                                    {degree.period}
+                                    {degree.grade && (
+                                        <> · {t("education.grade")}: <span class="text-emerald-400">{degree.grade}</span></>
+                                    )}
+                                </p>
+                            )}
+                            {degree.project && (
+                                <div class="mt-4 border border-white/5 bg-white/[0.02] p-4">
+                                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-emerald-400 uppercase">
+                                        {t("education.project")}
+                                    </span>
+                                    <p class="font-mono text-xs leading-relaxed text-white/50">
+                                        {degree.project}
+                                    </p>
+                                </div>
+                            )}
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="p-8 md:p-12">
+            <h4
+                class="mb-8 flex items-center gap-3 text-[10px] font-black tracking-[0.3em] text-white/40 uppercase"
+            >
+                <span class="h-[1px] w-4 bg-white/20"></span>
+                {t("education.certifications")}
+            </h4>
+            <div class="space-y-6">
+                {
+                    data.certifications.map((cert) => (
+                        <div class="flex items-start gap-4 border-b border-white/5 pb-6 last:border-0 last:pb-0">
+                            <div class="flex h-10 w-10 flex-shrink-0 items-center justify-center border border-emerald-500/20 bg-emerald-500/10">
+                                <span class="material-symbols-outlined text-[18px] text-emerald-400">
+                                    workspace_premium
+                                </span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-white/90">{cert.name}</p>
+                                <p class="text-sm text-white/50">{cert.issuer}</p>
+                                <p class="font-mono text-[11px] text-white/30">{cert.date}</p>
+                                {cert.credential && (
+                                    <p class="mt-1 font-mono text-[10px] text-white/20">
+                                        {t("education.credential")}: {cert.credential}
+                                    </p>
+                                )}
+                            </div>
+                        </div>
+                    ))
+                }
+            </div>
+        </div>
+    </div>
+</section>

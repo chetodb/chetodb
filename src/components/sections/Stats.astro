@@ -1,0 +1,31 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const stats = [
+    { value: "4", label: t("stats.years") },
+    { value: "+30", label: t("stats.integrations") },
+    { value: "3", label: t("stats.packages") },
+];
+---
+
+<div class="bg-background-card border-y border-white/10">
+    <div
+        class="mx-auto grid max-w-[1440px] grid-cols-1 divide-x divide-white/5 sm:grid-cols-3"
+    >
+        {
+            stats.map((stat) => (
+                <div class="flex flex-col items-center justify-center gap-2 px-6 py-10 text-center md:py-12">
+                    <span class="font-mono text-4xl font-black text-emerald-400 md:text-5xl">
+                        {stat.value}
+                    </span>
+                    <span class="text-[10px] font-bold tracking-widest text-white/40 uppercase">
+                        {stat.label}
+                    </span>
+                </div>
+            ))
+        }
+    </div>
+</div>
