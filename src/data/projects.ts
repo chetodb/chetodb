@@ -14,11 +14,11 @@ export const projects: Record<string, Project[]> = {
                 { label: "Integraciones B2B", value: "30 socios", dots: 5 },
             ],
             description:
-                "Sistema de gestión de almacén diseñado desde cero con arquitectura de microservicios. Conecta el almacén con 30 socios comerciales y transportistas mediante API/EDI, sincronizando stock en tiempo real y automatizando el flujo completo de expediciones.",
+                "Sistema de gestión de almacén diseñado desde cero con arquitectura de microservicios. Conecta el almacén con más de 30 socios externos, transportistas, distribuidores y fabricantes para dropshipping mediante API/EDI, sincronizando stock en tiempo real y automatizando el flujo completo de expediciones.",
             linkText: "Arquitectura",
             linkUrl: "#",
             challenge:
-                "Eliminar trabajo manual repetitivo (de 2 min por pedido a 1 clic) y garantizar coherencia de stock en operaciones multipaís con 30 integraciones externas activas.",
+                "Eliminar trabajo manual repetitivo (de 2 min por pedido a 1 clic) y garantizar coherencia de stock en operaciones multipaís con más de 30 integraciones externas activas.",
             challengeLabel: "Impacto",
             loadGraph: true,
         },
@@ -26,7 +26,7 @@ export const projects: Record<string, Project[]> = {
             index: "02",
             title: "Business Central SDK",
             visibility: "public",
-            badge: "Open Source · npm",
+            badge: "Personal · Open Source · npm",
             tags: ["TypeScript", "NestJS", "npm"],
             stats: [
                 { label: "Paquetes publicados", value: "3 packages" },
@@ -46,15 +46,15 @@ export const projects: Record<string, Project[]> = {
             index: "03",
             title: "SaaS · En desarrollo",
             visibility: "private",
-            badge: "En desarrollo · Privado",
-            tags: ["TypeScript", "NestJS", "Vue 3"],
+            badge: "Personal · En desarrollo",
+            tags: ["TypeScript", "Next.js", "Supabase"],
             stats: [
                 { label: "Estado", value: "WIP" },
                 { label: "Visibilidad", value: "Privado" },
                 { label: "Progreso", value: "Activo", progress: 40 },
             ],
             description:
-                "Proyecto SaaS en desarrollo activo. Detalles disponibles previa solicitud. Stack: TypeScript · NestJS · Vue 3.",
+                "Proyecto SaaS en desarrollo activo. Detalles disponibles previa solicitud. Stack: TypeScript · Next.js · Supabase.",
             challenge:
                 "Construir un producto propio escalable aplicando las lecciones aprendidas en años de trabajo con sistemas de producción complejos.",
             challengeLabel: "Motivación",
@@ -74,11 +74,11 @@ export const projects: Record<string, Project[]> = {
                 { label: "B2B integrations", value: "30 partners", dots: 5 },
             ],
             description:
-                "Warehouse management system built from scratch with a microservices architecture. Connects the warehouse with 30 commercial partners and carriers via API/EDI, syncing stock in real time and fully automating the shipment workflow.",
+                "Warehouse management system built from scratch with a microservices architecture. Connects the warehouse with more than 30 external partners, carriers, distributors and manufacturers for dropshipping via API/EDI, syncing stock in real time and fully automating the shipment workflow.",
             linkText: "Architecture",
             linkUrl: "#",
             challenge:
-                "Eliminate repetitive manual work (from 2 min per order to 1 click) and ensure stock consistency across multi-country operations with 30 active external integrations.",
+                "Eliminate repetitive manual work (from 2 min per order to 1 click) and ensure stock consistency across multi-country operations with more than 30 active external integrations.",
             challengeLabel: "Impact",
             loadGraph: true,
         },
@@ -86,7 +86,7 @@ export const projects: Record<string, Project[]> = {
             index: "02",
             title: "Business Central SDK",
             visibility: "public",
-            badge: "Open Source · npm",
+            badge: "Personal · Open Source · npm",
             tags: ["TypeScript", "NestJS", "npm"],
             stats: [
                 { label: "Published packages", value: "3 packages" },
@@ -106,15 +106,15 @@ export const projects: Record<string, Project[]> = {
             index: "03",
             title: "SaaS · In progress",
             visibility: "private",
-            badge: "In development · Private",
-            tags: ["TypeScript", "NestJS", "Vue 3"],
+            badge: "Personal · In development",
+            tags: ["TypeScript", "Next.js", "Supabase"],
             stats: [
                 { label: "Status", value: "WIP" },
                 { label: "Visibility", value: "Private" },
                 { label: "Progress", value: "Active", progress: 40 },
             ],
             description:
-                "SaaS project in active development. Details available upon request. Stack: TypeScript · NestJS · Vue 3.",
+                "SaaS project in active development. Details available upon request. Stack: TypeScript · Next.js · Supabase.",
             challenge:
                 "Build a scalable product of my own applying lessons learned from years working with complex production systems.",
             challengeLabel: "Motivation",
