@@ -46,6 +46,12 @@
         letter-spacing: -0.04em;
     }
 
+    .text-name {
+        font-size: clamp(2.8rem, 7vw, 6.5rem);
+        line-height: 0.85;
+        letter-spacing: -0.04em;
+    }
+
     .watermark-d {
         position: absolute;
         right: -10%;
