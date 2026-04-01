@@ -2,6 +2,7 @@
 import githubIcon from "../../assets/github.svg";
 import linkedinIcon from "../../assets/linkedin.svg";
 import mailIcon from "../../assets/mail.svg";
+import npmIcon from "../../assets/npm.svg";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
@@ -75,6 +76,24 @@ const t = useTranslations(lang);
                     ></span>
                     <span class="relative">
                         LINKEDIN
+                        <span
+                            class="absolute -bottom-2 left-0 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-full"
+                        ></span>
+                    </span>
+                </a>
+
+                <a
+                    class="group relative flex flex-col items-center gap-4 transition-transform hover:-translate-y-2"
+                    href="https://www.npmjs.com/~chetodb"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <span
+                        class="h-9 w-9 bg-black lg:h-12 lg:w-12"
+                        style={`mask-image: url(${npmIcon.src}); mask-size: contain; mask-repeat: no-repeat; mask-position: center; -webkit-mask-image: url(${npmIcon.src}); -webkit-mask-size: contain; -webkit-mask-repeat: no-repeat; -webkit-mask-position: center;`}
+                    ></span>
+                    <span class="relative">
+                        NPM
                         <span
                             class="absolute -bottom-2 left-0 h-px w-0 bg-emerald-500 transition-all duration-300 group-hover:w-full"
                         ></span>
