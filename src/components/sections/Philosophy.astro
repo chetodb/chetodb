@@ -51,7 +51,7 @@ const currentStack = stackData[lang] ?? stackData["es"];
                     return (
                         <>
                             {before}
-                            <span class="mt-2 block text-white/30 line-through decoration-emerald-500 decoration-4">
+                            <span class="text-white/30 line-through decoration-emerald-500 decoration-4">
                                 {matched}{after}
                             </span>
                         </>
@@ -66,6 +66,18 @@ const currentStack = stackData[lang] ?? stackData["es"];
             <p class="text-xl leading-relaxed font-light text-white/70">
                 {t("philosophy.p2")}
             </p>
+            <div class="border-t border-white/5 pt-8 space-y-6">
+                <div class="border-l-2 border-emerald-500/40 pl-4">
+                    <p class="text-base leading-relaxed font-light text-white/50">
+                        {t("philosophy.p3")}
+                    </p>
+                </div>
+                <div class="border-l-2 border-emerald-500/20 pl-4">
+                    <p class="text-base leading-relaxed font-light text-white/50">
+                        {t("philosophy.p4")}
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 
