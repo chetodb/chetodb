@@ -1,10 +1,14 @@
 ---
 import Footer from "../components/layout/Footer.astro";
 import Navbar from "../components/layout/Navbar.astro";
+import About from "../components/sections/About.astro";
+import Education from "../components/sections/Education.astro";
 import Experience from "../components/sections/Experience.astro";
 import Hero from "../components/sections/Hero.astro";
+import OpenSource from "../components/sections/OpenSource.astro";
 import Philosophy from "../components/sections/Philosophy.astro";
 import SelectedWork from "../components/sections/SelectedWork.astro";
+import Stats from "../components/sections/Stats.astro";
 import { defaultLang } from "../i18n/ui";
 import Layout from "../layouts/Layout.astro";
 
@@ -19,9 +23,13 @@ const { lang = defaultLang } = Astro.params;
     <Navbar />
     <main class="pt-20">
         <Hero />
+        <Stats />
+        <About />
         <Experience />
         <SelectedWork />
+        <OpenSource />
         <Philosophy />
+        <Education />
         <Footer />
     </main>
 </Layout>

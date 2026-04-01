@@ -1,0 +1,70 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<section
+    class="mx-auto max-w-[1440px] border-x border-white/5"
+    id="about"
+>
+    <div
+        class="grid grid-cols-1 gap-0 md:grid-cols-3"
+    >
+        <!-- Text block -->
+        <div class="col-span-2 border-b border-white/10 p-12 md:border-r md:border-b-0 md:p-20">
+            <h2
+                class="mb-10 text-[10px] font-black tracking-[0.4em] text-emerald-400 uppercase flex items-center gap-3"
+            >
+                <span class="h-[1px] w-6 bg-emerald-400"></span>
+                {t("section.about.title")}
+            </h2>
+            <div class="space-y-6">
+                <p class="text-xl leading-relaxed font-light text-white/80 md:text-2xl">
+                    {t("about.p1")}
+                </p>
+                <p class="text-lg leading-relaxed font-light text-white/60">
+                    {t("about.p2")}
+                </p>
+                <p class="text-lg leading-relaxed font-light text-white/60">
+                    {t("about.p3")}
+                </p>
+            </div>
+        </div>
+
+        <!-- Decorative side panel -->
+        <div class="relative flex flex-col justify-between overflow-hidden bg-white/[0.01] p-12 md:p-16">
+            <!-- Subtle grid watermark -->
+            <div
+                class="pointer-events-none absolute inset-0 opacity-[0.03]"
+                style="background-image: linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px); background-size: 32px 32px;"
+            ></div>
+
+            <div class="relative z-10 space-y-8">
+                <div class="border-b border-white/10 pb-6">
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Base</span>
+                    <span class="font-mono text-sm text-white/70">Benicarló, Valencia</span>
+                </div>
+                <div class="border-b border-white/10 pb-6">
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Disponibilidad</span>
+                    <span class="inline-flex items-center gap-2 font-mono text-sm text-emerald-400">
+                        <span class="relative flex h-1.5 w-1.5">
+                            <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
+                            <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+                        </span>
+                        Abierto · Remoto
+                    </span>
+                </div>
+                <div>
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Explorando</span>
+                    <div class="space-y-1 font-mono text-sm text-white/50">
+                        <div>Rust</div>
+                        <div>Open Source SDKs</div>
+                        <div>SaaS Architecture</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
