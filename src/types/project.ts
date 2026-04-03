@@ -2,7 +2,6 @@ export interface Stat {
     label: string;
     value: string;
     progress?: number;
-    dots?: number;
 }
 
 export interface Project {
@@ -20,4 +19,7 @@ export interface Project {
     topology?: boolean;
     loadGraph?: boolean;
     streamGraph?: boolean;
+    groupStart?: string;
+    install?: string[];
+    githubUrl?: string;
 }
