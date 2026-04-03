@@ -8,7 +8,7 @@ export const experience: Record<string, ExperienceEntry[]> = {
             location: "Benicarló, Comunidad Valenciana, España · Presencial",
             roles: [
                 {
-                    title: "Full Stack Developer & Responsable de IT",
+                    title: "Lead Full Stack Developer",
                     period: "ene. 2025 – actualidad",
                     duration: "1 año 3 meses",
                     bullets: [
@@ -28,6 +28,17 @@ export const experience: Record<string, ExperienceEntry[]> = {
                         "Expansión operativa a 9 países sin ampliar plantilla de almacén ni IT.",
                         "Implementación de inventario dual por lote y ubicación, eliminando discrepancias de stock.",
                         "Coordinación de resolución de incidentes críticos con fixes desplegados en menos de 24h sin downtime perceptible.",
+                    ],
+                },
+                {
+                    title: "Desarrollador en Prácticas (FCT)",
+                    period: "feb. 2022 – may. 2022",
+                    duration: "4 meses",
+                    bullets: [
+                        "Inicio del diseño de un sistema genérico de integración con terceros para el intercambio de stock, pedidos, estado de pedidos y tracking.",
+                        "Aprendizaje de la base de código existente y del dominio del negocio.",
+                        "Desarrollo de funcionalidades y mantenimiento bajo supervisión del desarrollador senior.",
+                        "Trabajo en el frontend con Vue 3 y primeros pasos con NestJS en el backend.",
                     ],
                 },
             ],
@@ -70,6 +81,17 @@ export const experience: Record<string, ExperienceEntry[]> = {
                         "Enabled expansion to 9 countries without growing warehouse or IT headcount.",
                         "Implemented dual inventory by batch and location, eliminating stock discrepancies.",
                         "Coordinated critical incident resolution, deploying fixes in under 24h with no perceptible downtime.",
+                    ],
+                },
+                {
+                    title: "Developer Intern (FCT)",
+                    period: "Feb 2022 – May 2022",
+                    duration: "4 months",
+                    bullets: [
+                        "Started designing a generic integration system with third parties for stock, order, order status and tracking exchange.",
+                        "Learned the existing codebase and business domain.",
+                        "Feature development and maintenance under senior developer supervision.",
+                        "Frontend work with Vue 3 and first steps with NestJS on the backend.",
                     ],
                 },
             ],
