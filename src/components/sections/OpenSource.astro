@@ -7,7 +7,7 @@ const t = useTranslations(lang);
 const packages = [
     {
         name: "@chetodb/business-central",
-        install: "npm install @chetodb/business-central",
+        install: "pnpm add @chetodb/business-central",
         version: "0.1.2",
         status: "active" as const,
         npmUrl: "https://www.npmjs.com/package/@chetodb/business-central",
@@ -18,7 +18,7 @@ const packages = [
     },
     {
         name: "@chetodb/nestjs-business-central",
-        install: "npm install @chetodb/nestjs-business-central",
+        install: "pnpm add @chetodb/nestjs-business-central",
         version: "0.1.2",
         status: "active" as const,
         npmUrl: "https://www.npmjs.com/package/@chetodb/nestjs-business-central",
@@ -29,14 +29,14 @@ const packages = [
     },
     {
         name: "address-kit",
-        install: "npm install address-kit",
-        version: "0.1.0",
+        install: "pnpm add address-kit",
+        version: "0.2.3",
         status: "active" as const,
         npmUrl: "https://www.npmjs.com/package/address-kit",
         descEs:
-            "Utilidades para parsear, validar y normalizar direcciones postales. Diseñado para entornos de logística y comercio electrónico con soporte multi-país.",
+            "Librería TypeScript para resolución, normalización y enriquecimiento de direcciones postales usando Nominatim (OpenStreetMap). Caché LRU configurable y soporte para proveedores personalizados.",
         descEn:
-            "Utilities to parse, validate and normalize postal addresses. Designed for logistics and e-commerce environments with multi-country support.",
+            "TypeScript library for address resolution, normalization and enrichment using Nominatim (OpenStreetMap). Configurable LRU cache and custom provider support.",
     },
 ];
 ---
