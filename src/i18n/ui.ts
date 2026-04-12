@@ -17,9 +17,9 @@ export const ui = {
         "hero.badge": "Disponible para nuevas oportunidades",
         "hero.name": "David Cheto",
         "hero.role": "Backend Engineer",
-        "hero.tagline": "Construyo lo que hace funcionar el resto.",
+        "hero.tagline": "El software visible necesita que el invisible funcione.",
         "hero.subtitle":
-            "Llevo 4 años diseñando sistemas de producción que nadie ve pero todos usan. Un SGA con 650 expediciones diarias, +30 integraciones activas y un procesador masivo de eventos en desarrollo activo.",
+            "Llevo 4 años diseñando sistemas de producción que nadie ve, pero todos usan: un SGA con 650 expediciones diarias, +30 integraciones activas y un procesador masivo de eventos en desarrollo activo.",
         "hero.cta": "Ver Proyectos",
         "stats.years": "Años de experiencia",
         "stats.integrations": "APIs de terceros integradas",
@@ -27,11 +27,11 @@ export const ui = {
         "stats.packages": "Paquetes npm publicados",
         "section.about.title": "Sobre mí",
         "about.p1":
-            "Entré en LUBRIMED como junior. Mi compañero senior me enseñó a pensar en sistemas, y fui creciendo con cada integración, cada incidente y cada decisión de arquitectura. Hoy soy yo quien lidera la evolución técnica de un sistema que mueve millones y conecta el negocio con toda Europa.",
+            "Entré en LUBRIMED como junior. Mi compañero senior me enseñó a pensar en sistemas y fui creciendo con cada integración, cada incidente y cada decisión de arquitectura. Hoy soy yo quien lidera la evolución técnica de un sistema que mueve millones y conecta el negocio con toda Europa.",
         "about.p2":
-            "Soy full stack por necesidad, backend por vocación. Es donde viven los problemas reales: datos inconsistentes entre sistemas, eventos fuera de orden, lógica de negocio que no perdona errores. Me atrae la complejidad que tiene solución, no la complejidad artificial.",
+            "Soy full stack por necesidad, backend por vocación. Ahí viven los problemas reales: datos inconsistentes entre sistemas, eventos fuera de orden, lógica de negocio que no perdona errores.",
         "about.p3":
-            "Fuera del trabajo publico librerías npm como hobby, cosas que necesité y no existían. Aprendo mejor construyendo que leyendo, así que siempre tengo algo entre manos.",
+            "Fuera del trabajo publico librerías como hobby, cosas que necesité y no existían. Aprendo mejor construyendo que leyendo, así que siempre tengo algo entre manos.",
         "section.experience.num": "01",
         "section.experience.title": "Experiencia",
         "section.experience.subtitle": "CARRERA",
@@ -51,13 +51,13 @@ export const ui = {
         "philosophy.quote": '"Diseñado para cambiar, no para ser perfecto."',
         "philosophy.strike": "perfecto",
         "philosophy.p1":
-            "Cuando algo falla en producción, voy directo porque ya sé dónde mirar. El conocimiento profundo del sistema no es un lujo, es lo que convierte un incidente de horas en uno de minutos.",
+            "Cuando algo falla en producción, voy directo al error porque ya sé dónde mirar. Gracias al conocimiento profundo del sistema, lo que podría ser un incidente de horas se convierte en uno de minutos.",
         "philosophy.p2":
-            "El código se escribe una vez y se lee cien veces. Si tengo que pensar demasiado para entender qué hace una función, algo está mal, independientemente de lo elegante que parezca.",
+            "El mejor código no es el más inteligente, es el que no necesita comentarios para explicarse.",
         "philosophy.p3":
-            "Las APIs externas cambian sin avisar. Los requisitos también. Diseño mis sistemas para que adaptarse sea rápido y fácil, no para que sean perfectos hoy.",
+            "Las APIs externas cambian sin avisar. Los requisitos también. Diseño mis sistemas para que adaptarse sea rápido y fácil.",
         "philosophy.p4":
-            "No busco escribir el código definitivo. Busco escribir mejor código que ayer.",
+            "Busco la mejora continua: mejorar mis habilidades día a día.",
         "stack.title": "Stack Tecnológico",
         "stack.core": "Lenguajes Core",
         "stack.infra": "Infraestructura",
@@ -100,9 +100,9 @@ export const ui = {
         "hero.badge": "Available for new opportunities",
         "hero.name": "David Cheto",
         "hero.role": "Backend Engineer",
-        "hero.tagline": "I build what makes everything else work.",
+        "hero.tagline": "Visible software needs the invisible to work.",
         "hero.subtitle":
-            "I've spent 4 years building production systems nobody sees but everyone uses. A WMS handling 650 daily shipments, +30 active integrations and a massive worker-based event processor in active development.",
+            "I've spent 4 years building production systems nobody sees, but everyone uses: a WMS handling 650 daily shipments, +30 active integrations and a massive worker-based event processor in active development.",
         "hero.cta": "View Projects",
         "stats.years": "Years of experience",
         "stats.integrations": "Third-party APIs integrated",
@@ -112,9 +112,9 @@ export const ui = {
         "about.p1":
             "I joined LUBRIMED as a junior. My senior colleague taught me to think in systems, and I grew with every integration, every incident and every architecture decision. Today I lead the technical evolution of a system that moves millions and connects the business across Europe.",
         "about.p2":
-            "I specialized in backend because that's where the real problems live: inconsistent data between systems, out-of-order events, integrations that fail at 3am. I'm drawn to complexity that has a solution, not artificial complexity.",
+            "Full stack by necessity, backend by vocation. That's where the real problems live: inconsistent data between systems, out-of-order events, business logic that doesn't forgive mistakes.",
         "about.p3":
-            "Outside of work, I publish open source npm packages to reduce the friction of integrating corporate ERP software into TypeScript projects. And I spend time on Rust, because its memory safety model feels like the future of high-performance systems.",
+            "Outside of work I publish libraries as a hobby, things I needed that didn't exist. I learn better by building than by reading, so I always have something going on.",
         "section.experience.num": "01",
         "section.experience.title": "Experience",
         "section.experience.subtitle": "CAREER",
@@ -134,13 +134,13 @@ export const ui = {
         "philosophy.quote": '"Built to change, not to be perfect."',
         "philosophy.strike": "perfect",
         "philosophy.p1":
-            "When something fails in production, I go straight to it because I already know where to look. Deep system knowledge isn't a luxury, it's what turns a hours-long incident into a minutes-long one.",
+            "When something fails in production, I go straight to the error because I already know where to look. Deep knowledge of the system turns what could be an hours-long incident into a minutes-long one.",
         "philosophy.p2":
-            "Code is written once and read a hundred times. If I have to think too hard to understand what a function does, something is wrong, regardless of how elegant it looks.",
+            "The best code isn't the smartest — it's the one that doesn't need comments to explain itself.",
         "philosophy.p3":
-            "External APIs change without warning. Requirements do too. I design my systems to adapt quickly and easily, not to be perfect today.",
+            "External APIs change without warning. Requirements do too. I design my systems to adapt quickly and easily.",
         "philosophy.p4":
-            "I'm not looking to write the definitive code. I'm looking to write better code than yesterday.",
+            "Continuous improvement: getting better at my craft every day.",
         "stack.title": "Tech Stack",
         "stack.core": "Core Languages",
         "stack.infra": "Infrastructure",
