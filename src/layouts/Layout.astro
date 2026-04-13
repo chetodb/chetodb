@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { useTranslations } from "../i18n/utils";
 import "../styles/global.css";
 
 interface Props {
@@ -7,6 +8,9 @@ interface Props {
 }
 
 const { lang = "es" } = Astro.props;
+const t = useTranslations(lang as "es" | "en");
+const locale = lang === "en" ? "en_US" : "es_ES";
+const altLocale = lang === "en" ? "es_ES" : "en_US";
 ---
 
 <!doctype html>
@@ -16,14 +20,17 @@ const { lang = "es" } = Astro.props;
         <meta name="viewport" content="width=device-width" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="generator" content={Astro.generator} />
-        <title>David Cheto Blasco · Backend Engineer</title>
-        <meta name="description" content="Backend Engineer especializado en TypeScript y NestJS. Diseño sistemas robustos — desde arquitecturas de microservicios hasta integraciones API complejas — con 4 años de experiencia." />
-        <meta property="og:title" content="David Cheto Blasco · Backend Engineer" />
-        <meta property="og:description" content="Backend Engineer especializado en TypeScript y NestJS. Diseño sistemas robustos — desde arquitecturas de microservicios hasta integraciones API complejas — con 4 años de experiencia." />
+        <title>{t("seo.title")}</title>
+        <meta name="description" content={t("seo.description")} />
+        <meta property="og:title" content={t("seo.title")} />
+        <meta property="og:description" content={t("seo.description")} />
         <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://chetodb.dev" />
+        <meta property="og:locale" content={locale} />
+        <meta property="og:locale:alternate" content={altLocale} />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="David Cheto Blasco · Backend Engineer" />
-        <meta name="twitter:description" content="Backend Engineer especializado en TypeScript y NestJS. Diseño sistemas robustos — desde arquitecturas de microservicios hasta integraciones API complejas — con 4 años de experiencia." />
+        <meta name="twitter:title" content={t("seo.title")} />
+        <meta name="twitter:description" content={t("seo.description")} />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
