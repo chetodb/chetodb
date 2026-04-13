@@ -7,6 +7,8 @@ export const defaultLang = "es";
 
 export const ui = {
     es: {
+        "seo.title": "David Cheto Blasco · Backend Engineer",
+        "seo.description": "Backend Engineer con 4 años construyendo sistemas de producción. NestJS, TypeScript, RabbitMQ y microservicios.",
         "nav.experience": "Experiencia",
         "nav.work": "Proyectos",
         "nav.philosophy": "Filosofía",
@@ -96,6 +98,8 @@ export const ui = {
         "404.cta": "Volver al inicio",
     },
     en: {
+        "seo.title": "David Cheto Blasco · Backend Engineer",
+        "seo.description": "Backend Engineer with 4 years building production systems. NestJS, TypeScript, RabbitMQ and microservices.",
         "nav.experience": "Experience",
         "nav.work": "Projects",
         "nav.philosophy": "Philosophy",

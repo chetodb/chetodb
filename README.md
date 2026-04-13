@@ -1,6 +1,6 @@
 # Hey, I'm David 👋
 
-Full stack engineer from Benicarló, Spain. I joined LUBRIMED straight out of school as a junior
+Backend engineer from Benicarló, Spain. I joined LUBRIMED straight out of school as a junior
 and grew into leading the whole tech side: one integration, one incident and one architecture
 decision at a time.
 

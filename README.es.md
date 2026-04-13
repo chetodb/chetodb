@@ -1,6 +1,6 @@
 # Hola, soy David 👋
 
-Full stack engineer de Benicarló, España. Entré en LUBRIMED recién salido del ciclo como junior
+Backend engineer de Benicarló, España. Entré en LUBRIMED recién salido del ciclo como junior
 y fui creciendo hasta liderar toda la parte técnica: integración a integración, incidente
 a incidente y decisión de arquitectura a decisión de arquitectura.
 
