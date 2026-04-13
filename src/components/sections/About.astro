@@ -43,25 +43,25 @@ const t = useTranslations(lang);
 
             <div class="relative z-10 space-y-8">
                 <div class="border-b border-white/10 pb-6">
-                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Base</span>
-                    <span class="font-mono text-sm text-white/70">Benicarló, Valencia</span>
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">{t("about.location.label")}</span>
+                    <span class="font-mono text-sm text-white/70">{t("about.location.value")}</span>
                 </div>
                 <div class="border-b border-white/10 pb-6">
-                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Disponibilidad</span>
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">{t("about.availability.label")}</span>
                     <span class="inline-flex items-center gap-2 font-mono text-sm text-emerald-400">
                         <span class="relative flex h-1.5 w-1.5">
                             <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
                             <span class="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
                         </span>
-                        Abierto · Remoto
+                        {t("about.availability.value")}
                     </span>
                 </div>
                 <div>
-                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">Explorando</span>
+                    <span class="mb-2 block text-[9px] font-bold tracking-widest text-white/30 uppercase">{t("about.exploring.label")}</span>
                     <div class="space-y-1 font-mono text-sm text-white/50">
-                        <div>Rust</div>
-                        <div>Kubernetes</div>
-                        <div>Integraciones con IA</div>
+                        {t("about.exploring.items").split(", ").map((item) => (
+                            <div>{item}</div>
+                        ))}
                     </div>
                 </div>
             </div>

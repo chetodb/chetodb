@@ -16,9 +16,6 @@ export interface Project {
     linkUrl?: string;
     challenge: string;
     challengeLabel?: string;
-    topology?: boolean;
-    loadGraph?: boolean;
-    streamGraph?: boolean;
     groupStart?: string;
     install?: string[];
     githubUrl?: string;
