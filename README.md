@@ -1,46 +1,50 @@
-# Astro Starter Kit: Basics
+# Hey, I'm David 👋
 
-```sh
-pnpm create astro@latest -- --template basics
-```
+Full stack engineer from Benicarló, Spain. I joined LUBRIMED straight out of school as a junior
+and grew into leading the whole tech side: one integration, one incident and one architecture
+decision at a time.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Over the past 4 years I've built and scaled a WMS from a blank page to 650 automated shipments
+a day, 30+ live B2B integrations across Europe and 12,500 SKUs syncing in under 30 seconds.
 
-## 🚀 Project Structure
+Outside of work I build open source tools. Mostly things I needed that didn't exist.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+## What I'm working on
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+**LUBRIMED SGA**
+Warehouse management system built on microservices. Connects the warehouse with carriers and suppliers via API/EDI.
+`private` `production`
 
-## 🧞 Commands
+**Worker Engine**
+Async task and event processing built on BullMQ + RabbitMQ. Runs heavy background jobs and orchestrates business events across services.
+`private` `in development`
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                | Action                                           |
-| :--------------------- | :----------------------------------------------- |
-| `pnpm install`         | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+## Open Source
 
-## 👀 Want to learn more?
+| Package | What it does |
+|---|---|
+| [`@chetodb/business-central`](https://www.npmjs.com/package/@chetodb/business-central) | Type-safe SDK for Microsoft Dynamics 365 Business Central |
+| [`@chetodb/nestjs-business-central`](https://www.npmjs.com/package/@chetodb/nestjs-business-central) | Drop-in NestJS module for the BC SDK |
+| [`address-kit`](https://www.npmjs.com/package/address-kit) | Address validation and normalization across 9 countries |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+## Stack
+
+TypeScript · NestJS · Node.js · PostgreSQL · RabbitMQ · Redis · Docker · Vue 3
+
+Currently exploring: Rust · Kubernetes · AI integrations
+
+---
+
+## Get in touch
+
+[chetodb.dev](https://chetodb.dev) · [hola@chetodb.dev](mailto:hola@chetodb.dev) · [linkedin.com/in/chetodb](https://linkedin.com/in/chetodb)
+
+---
+
+> [Versión en español](./README.es.md)
