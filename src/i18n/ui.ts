@@ -26,8 +26,14 @@ export const ui = {
         "stats.skus": "Países con operaciones activas",
         "stats.packages": "Paquetes npm publicados",
         "section.about.title": "Sobre mí",
+        "about.location.label": "Base",
+        "about.location.value": "Benicarló, Valencia",
+        "about.availability.label": "Disponibilidad",
+        "about.availability.value": "Abierto · Remoto",
+        "about.exploring.label": "Explorando",
+        "about.exploring.items": "Rust, Kubernetes, Integraciones con IA",
         "about.p1":
-            "Entré en LUBRIMED como junior. Mi compañero senior me enseñó a pensar en sistemas y fui creciendo con cada integración, cada incidente y cada decisión de arquitectura. Hoy soy yo quien lidera la evolución técnica de un sistema que mueve millones y conecta el negocio con toda Europa.",
+            "Entré en LUBRIMED como junior. Allí aprendí a pensar en sistemas y fui creciendo con cada integración, cada incidente y cada decisión de arquitectura. Hoy soy yo quien lidera la evolución técnica de un sistema que mueve millones y conecta el negocio con toda Europa.",
         "about.p2":
             "Soy full stack por necesidad, backend por vocación. Ahí viven los problemas reales: datos inconsistentes entre sistemas, eventos fuera de orden, lógica de negocio que no perdona errores.",
         "about.p3":
@@ -109,8 +115,14 @@ export const ui = {
         "stats.skus": "Countries with active operations",
         "stats.packages": "npm packages published",
         "section.about.title": "About me",
+        "about.location.label": "Based",
+        "about.location.value": "Benicarló, Valencia",
+        "about.availability.label": "Availability",
+        "about.availability.value": "Open · Remote",
+        "about.exploring.label": "Exploring",
+        "about.exploring.items": "Rust, Kubernetes, AI integrations",
         "about.p1":
-            "I joined LUBRIMED as a junior. My senior colleague taught me to think in systems, and I grew with every integration, every incident and every architecture decision. Today I lead the technical evolution of a system that moves millions and connects the business across Europe.",
+            "I joined LUBRIMED as a junior. That's where I learned to think in systems, and I grew with every integration, every incident and every architecture decision. Today I lead the technical evolution of a system that moves millions and connects the business across Europe.",
         "about.p2":
             "Full stack by necessity, backend by vocation. That's where the real problems live: inconsistent data between systems, out-of-order events, business logic that doesn't forgive mistakes.",
         "about.p3":
