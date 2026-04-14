@@ -11,7 +11,7 @@ export const ui = {
         "seo.description": "Backend Engineer con 4 años construyendo sistemas de producción. NestJS, TypeScript, RabbitMQ y microservicios.",
         "nav.experience": "Experiencia",
         "nav.work": "Proyectos",
-        "nav.philosophy": "Filosofía",
+        "nav.methodology": "Metodología",
         "nav.stack": "Stack",
         "nav.education": "Formación",
         "nav.contact": "Contacto",
@@ -21,7 +21,7 @@ export const ui = {
         "hero.role": "Backend Engineer",
         "hero.tagline": "El software visible necesita que el invisible funcione.",
         "hero.subtitle":
-            "Llevo 4 años diseñando sistemas de producción que nadie ve, pero todos usan: un SGA con 650 expediciones diarias, +30 integraciones activas y un procesador masivo de eventos en desarrollo activo.",
+            "Me gusta cuando el sistema que construyo empieza a vivir solo. Cuando deja de ser código y se convierte en algo que la gente usa sin saber que existe.",
         "hero.cta": "Ver Proyectos",
         "stats.years": "Años de experiencia",
         "stats.integrations": "APIs de terceros integradas",
@@ -35,15 +35,15 @@ export const ui = {
         "about.exploring.label": "Explorando",
         "about.exploring.items": "Rust, Kubernetes, Integraciones con IA",
         "about.p1":
-            "Entré en LUBRIMED como junior. Allí aprendí a pensar en sistemas y fui creciendo con cada integración, cada incidente y cada decisión de arquitectura. Hoy soy yo quien lidera la evolución técnica de un sistema que mueve millones y conecta el negocio con toda Europa.",
+            "Comencé a programar atraído por el desafío de resolver problemas y verlos funcionar. Cuatro años después, mantengo la misma motivación, pero con un enfoque más maduro: entender el negocio antes de construir. Es la mejor forma que conozco de garantizar buenos resultados.",
         "about.p2":
             "Soy full stack por necesidad, backend por vocación. Ahí viven los problemas reales: datos inconsistentes entre sistemas, eventos fuera de orden, lógica de negocio que no perdona errores.",
         "about.p3":
             "Fuera del trabajo publico librerías como hobby, cosas que necesité y no existían. Aprendo mejor construyendo que leyendo, así que siempre tengo algo entre manos.",
-        "section.experience.num": "01",
+        "section.experience.num": "02",
         "section.experience.title": "Experiencia",
         "section.experience.subtitle": "CARRERA",
-        "section.work.num": "02",
+        "section.work.num": "03",
         "section.work.title": "Proyectos Seleccionados",
         "section.work.date": "EST. 2022",
         "section.oss.num": "03",
@@ -53,24 +53,35 @@ export const ui = {
         "oss.version": "Versión",
         "oss.status.active": "Activo",
         "oss.status.wip": "En desarrollo",
-        "section.philosophy.num": "04",
-        "section.philosophy.title": "Filosofía de Ingeniería",
-        "section.philosophy.subtitle": "VALORES",
-        "philosophy.quote": '"Diseñado para cambiar, no para ser perfecto."',
-        "philosophy.strike": "perfecto",
-        "philosophy.p1":
-            "Cuando algo falla en producción, voy directo al error porque ya sé dónde mirar. Gracias al conocimiento profundo del sistema, lo que podría ser un incidente de horas se convierte en uno de minutos.",
-        "philosophy.p2":
+        "section.methodology.num": "03",
+        "section.methodology.title": "Metodología",
+        "section.methodology.subtitle": "PROCESO",
+        "methodology.quote": '"Diseñado para cambiar, no para ser perfecto."',
+        "methodology.strike": "perfecto",
+        "methodology.step1.title": "Entender",
+        "methodology.step1.desc":
+            "Antes de escribir código, entiendo el negocio. Cómo funciona, dónde falla y qué no puede romperse. Ahí está la diferencia entre construir algo útil o simplemente cumplir requisitos.",
+        "methodology.step2.title": "Diseñar",
+        "methodology.step2.desc":
+            "Diseño sistemas que evolucionan sin rehacerse. Las APIs cambian. Los requisitos también. La arquitectura tiene que aguantar ese movimiento sin romperse.",
+        "methodology.step3.title": "Construir",
+        "methodology.step3.desc":
+            "Lo que desarrollo va a producción real. Sin demos eternas ni prototipos decorativos. Código que soporta tráfico, errores y uso real.",
+        "methodology.step4.title": "Mantener",
+        "methodology.step4.desc":
+            "Cuando algo falla, sé dónde mirar. Conozco el sistema lo suficiente como para reducir horas a minutos. Mantener no es apagar fuegos, es anticiparlos.",
+        "methodology.principles": "Principios",
+        "methodology.p1":
             "El mejor código no es el más inteligente, es el que no necesita comentarios para explicarse.",
-        "philosophy.p3":
+        "methodology.p2":
             "Las APIs externas cambian sin avisar. Los requisitos también. Diseño mis sistemas para que adaptarse sea rápido y fácil.",
-        "philosophy.p4":
+        "methodology.p3":
             "Busco la mejora continua: mejorar mis habilidades día a día.",
         "stack.title": "Stack Tecnológico",
         "stack.core": "Lenguajes Core",
         "stack.infra": "Infraestructura",
         "stack.focus": "Foco Actual",
-        "section.education.num": "05",
+        "section.education.num": "04",
         "section.education.title": "Formación",
         "section.education.subtitle": "EDUCACIÓN",
         "education.grade": "Nota",
@@ -102,7 +113,7 @@ export const ui = {
         "seo.description": "Backend Engineer with 4 years building production systems. NestJS, TypeScript, RabbitMQ and microservices.",
         "nav.experience": "Experience",
         "nav.work": "Projects",
-        "nav.philosophy": "Philosophy",
+        "nav.methodology": "Methodology",
         "nav.stack": "Stack",
         "nav.education": "Education",
         "nav.contact": "Contact",
@@ -112,7 +123,7 @@ export const ui = {
         "hero.role": "Backend Engineer",
         "hero.tagline": "Visible software needs the invisible to work.",
         "hero.subtitle":
-            "I've spent 4 years building production systems nobody sees, but everyone uses: a WMS handling 650 daily shipments, +30 active integrations and a massive worker-based event processor in active development.",
+            "I like when the system I build starts living on its own. When it stops being code and becomes something people use without knowing it exists.",
         "hero.cta": "View Projects",
         "stats.years": "Years of experience",
         "stats.integrations": "Third-party APIs integrated",
@@ -126,15 +137,15 @@ export const ui = {
         "about.exploring.label": "Exploring",
         "about.exploring.items": "Rust, Kubernetes, AI integrations",
         "about.p1":
-            "I joined LUBRIMED as a junior. That's where I learned to think in systems, and I grew with every integration, every incident and every architecture decision. Today I lead the technical evolution of a system that moves millions and connects the business across Europe.",
+            "I got into programming drawn by the challenge of solving problems and watching them work. Four years later, the motivation is the same — just with a more mature focus: understand the business before building. It's the best way I know to deliver good results.",
         "about.p2":
             "Full stack by necessity, backend by vocation. That's where the real problems live: inconsistent data between systems, out-of-order events, business logic that doesn't forgive mistakes.",
         "about.p3":
             "Outside of work I publish libraries as a hobby, things I needed that didn't exist. I learn better by building than by reading, so I always have something going on.",
-        "section.experience.num": "01",
+        "section.experience.num": "02",
         "section.experience.title": "Experience",
         "section.experience.subtitle": "CAREER",
-        "section.work.num": "02",
+        "section.work.num": "03",
         "section.work.title": "Selected Projects",
         "section.work.date": "EST. 2022",
         "section.oss.num": "03",
@@ -144,24 +155,35 @@ export const ui = {
         "oss.version": "Version",
         "oss.status.active": "Active",
         "oss.status.wip": "In Development",
-        "section.philosophy.num": "04",
-        "section.philosophy.title": "Engineering Philosophy",
-        "section.philosophy.subtitle": "VALUES",
-        "philosophy.quote": '"Built to change, not to be perfect."',
-        "philosophy.strike": "perfect",
-        "philosophy.p1":
-            "When something fails in production, I go straight to the error because I already know where to look. Deep knowledge of the system turns what could be an hours-long incident into a minutes-long one.",
-        "philosophy.p2":
+        "section.methodology.num": "03",
+        "section.methodology.title": "Methodology",
+        "section.methodology.subtitle": "PROCESS",
+        "methodology.quote": '"Built to change, not to be perfect."',
+        "methodology.strike": "perfect",
+        "methodology.step1.title": "Understand",
+        "methodology.step1.desc":
+            "Before writing code, I understand the business. How it works, where it breaks and what can't fail. That's the difference between building something useful and just meeting requirements.",
+        "methodology.step2.title": "Design",
+        "methodology.step2.desc":
+            "I design systems that evolve without being rewritten. APIs change. Requirements do too. The architecture has to hold up through that movement without breaking.",
+        "methodology.step3.title": "Build",
+        "methodology.step3.desc":
+            "What I build goes to real production. No endless demos or decorative prototypes. Code that handles traffic, errors and real usage.",
+        "methodology.step4.title": "Own",
+        "methodology.step4.desc":
+            "When something fails, I know where to look. I know the system well enough to turn hours into minutes. Maintaining isn't about putting out fires — it's about anticipating them.",
+        "methodology.principles": "Principles",
+        "methodology.p1":
             "The best code isn't the smartest — it's the one that doesn't need comments to explain itself.",
-        "philosophy.p3":
+        "methodology.p2":
             "External APIs change without warning. Requirements do too. I design my systems to adapt quickly and easily.",
-        "philosophy.p4":
+        "methodology.p3":
             "Continuous improvement: getting better at my craft every day.",
         "stack.title": "Tech Stack",
         "stack.core": "Core Languages",
         "stack.infra": "Infrastructure",
         "stack.focus": "Current Focus",
-        "section.education.num": "05",
+        "section.education.num": "04",
         "section.education.title": "Education",
         "section.education.subtitle": "TRAINING",
         "education.grade": "Grade",

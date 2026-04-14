@@ -1,0 +1,135 @@
+---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { stack as stackData } from "../../data/stack";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const currentStack = stackData[lang] ?? stackData["es"];
+
+const steps = [
+    { title: t("methodology.step1.title"), desc: t("methodology.step1.desc"), num: "01" },
+    { title: t("methodology.step2.title"), desc: t("methodology.step2.desc"), num: "02" },
+    { title: t("methodology.step3.title"), desc: t("methodology.step3.desc"), num: "03" },
+    { title: t("methodology.step4.title"), desc: t("methodology.step4.desc"), num: "04" },
+];
+
+const principles = [
+    t("methodology.p1"),
+    t("methodology.p2"),
+    t("methodology.p3"),
+];
+
+const quote = t("methodology.quote");
+const strike = t("methodology.strike");
+const strikeIdx = quote.toLowerCase().indexOf(strike.toLowerCase());
+---
+
+<!-- Section header -->
+<section class="bg-background-card border-y border-white/10" id="methodology">
+    <div class="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-8">
+        <h2 class="flex items-center gap-4 text-xs font-black tracking-[0.4em] text-white/50 uppercase">
+            <span class="block h-2 w-2 bg-white/50"></span>
+            {t("section.methodology.num")} / {t("section.methodology.title")}
+        </h2>
+        <span class="font-mono text-[10px] text-white/30">{t("section.methodology.subtitle")}</span>
+    </div>
+</section>
+
+<!-- Process steps -->
+<section class="mx-auto max-w-[1440px] border-x border-white/5">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        {steps.map((step, i) => (
+            <div class={`relative p-10 md:p-12 border-b border-white/10 ${i < 3 ? "lg:border-r" : ""} ${i < 2 ? "md:border-r" : ""}`}>
+                <div class="mb-6 font-mono text-[10px] font-bold tracking-[0.3em] text-emerald-500/60 uppercase">
+                    {step.num}
+                </div>
+                <h3 class="mb-4 text-2xl font-black tracking-tight text-white uppercase">
+                    {step.title}
+                </h3>
+                <p class="text-sm leading-relaxed font-light text-white/50">
+                    {step.desc}
+                </p>
+                <div class="absolute bottom-0 left-10 h-px w-8 bg-emerald-500/30"></div>
+            </div>
+        ))}
+    </div>
+</section>
+
+<!-- Principles + Stack -->
+<section class="relative mx-auto grid max-w-[1440px] grid-cols-1 overflow-hidden border-x border-white/5 md:grid-cols-2">
+    <div class="watermark-d font-display translate-x-1/4 translate-y-1/4 font-black text-white/5 select-none">
+        D
+    </div>
+
+    <!-- Principles -->
+    <div class="relative z-10 border-b border-white/10 p-12 md:border-r md:border-b-0 md:p-20">
+        <!-- Quote with strikethrough -->
+        <h4 class="mb-12 text-4xl leading-tight font-black text-white uppercase lg:text-5xl">
+            {strikeIdx === -1 ? quote : (
+                <>
+                    {quote.slice(0, strikeIdx)}
+                    <span class="text-white/30 line-through decoration-emerald-500 decoration-4">
+                        {quote.slice(strikeIdx, strikeIdx + strike.length)}{quote.slice(strikeIdx + strike.length)}
+                    </span>
+                </>
+            )}
+        </h4>
+
+        <!-- Principles label -->
+        <div class="mb-8 flex items-center gap-3 text-[10px] font-black tracking-[0.3em] text-emerald-400 uppercase">
+            <span class="h-[1px] w-6 bg-emerald-400"></span>
+            {t("methodology.principles")}
+        </div>
+
+        <div class="space-y-6">
+            {principles.map((p) => (
+                <p class="text-base leading-relaxed font-light text-white/60">{p}</p>
+            ))}
+        </div>
+    </div>
+
+    <!-- Stack (secondary) -->
+    <div class="relative z-10 bg-white/[0.01] p-12 md:p-20" id="stack">
+        <h5 class="mb-10 flex items-center gap-3 text-[10px] font-black tracking-[0.3em] text-emerald-400 uppercase">
+            <span class="h-[1px] w-6 bg-emerald-400"></span>
+            {t("stack.title")}
+        </h5>
+        <div class="grid grid-cols-2 gap-12">
+            <div>
+                <span class="mb-4 block border-b border-white/20 pb-3 text-xs font-black tracking-widest text-white uppercase">
+                    {t("stack.core")}
+                </span>
+                <ul class="space-y-3 font-mono text-sm text-white/60">
+                    {currentStack.languages.map((item) => (
+                        <li class="flex items-center gap-3">
+                            <span class={`h-1.5 w-1.5 ${item.status === "focus" ? "bg-emerald-500/50" : "bg-emerald-500"}`} />
+                            {item.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div>
+                <span class="mb-4 block border-b border-white/20 pb-3 text-xs font-black tracking-widest text-white uppercase">
+                    {t("stack.infra")}
+                </span>
+                <ul class="space-y-3 font-mono text-sm text-white/60">
+                    {currentStack.infrastructure.map((item) => (
+                        <li class="flex items-center gap-3">
+                            <span class="material-symbols-outlined text-[14px]">{item.icon}</span>
+                            {item.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+        <div class="mt-12 border-t border-white/5 pt-10">
+            <div class="mb-3 text-[10px] font-bold tracking-widest text-white/30 uppercase">
+                {t("stack.focus")}
+            </div>
+            <p class="font-mono text-sm leading-relaxed text-white/50">
+                {currentStack.currentFocus}
+            </p>
+        </div>
+    </div>
+</section>
