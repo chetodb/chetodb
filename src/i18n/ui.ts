@@ -35,11 +35,13 @@ export const ui = {
         "about.exploring.label": "Explorando",
         "about.exploring.items": "Rust, Kubernetes, Integraciones con IA",
         "about.p1":
-            "Comencé a programar atraído por el desafío de resolver problemas y verlos funcionar. Cuatro años después, mantengo la misma motivación, pero con un enfoque más maduro: entender el negocio antes de construir. Es la mejor forma que conozco de garantizar buenos resultados.",
+            "Comencé en programación por el reto de resolver problemas, pero lo que de verdad me mantiene aquí es otra cosa: aportar soluciones reales a grandes sistemas en producción.",
         "about.p2":
-            "Soy full stack por necesidad, backend por vocación. Ahí viven los problemas reales: datos inconsistentes entre sistemas, eventos fuera de orden, lógica de negocio que no perdona errores.",
+            "Trabajo como full stack, aunque mi sitio natural está en el backend. Es donde suelen concentrarse los problemas que más importan: integraciones que no encajan del todo, datos inconsistentes entre sistemas, eventos fuera de orden y reglas de negocio donde un pequeño error tiene consecuencias reales.",
         "about.p3":
-            "Fuera del trabajo publico librerías como hobby, cosas que necesité y no existían. Aprendo mejor construyendo que leyendo, así que siempre tengo algo entre manos.",
+            "Con el tiempo he aprendido que no basta con construir bien. Antes hay que entender el negocio, el contexto y las restricciones del sistema. Es la forma más fiable de tomar buenas decisiones técnicas y conseguir resultados que de verdad funcionen.",
+        "about.p4":
+            "Fuera del trabajo publico librerías como hobby: herramientas que eché en falta y decidí construir. Suelo aprender así, haciendo. Por eso casi siempre tengo algún proyecto entre manos.",
         "section.experience.num": "02",
         "section.experience.title": "Experiencia",
         "section.experience.subtitle": "CARRERA",
@@ -137,11 +139,13 @@ export const ui = {
         "about.exploring.label": "Exploring",
         "about.exploring.items": "Rust, Kubernetes, AI integrations",
         "about.p1":
-            "I got into programming drawn by the challenge of solving problems and watching them work. Four years later, the motivation is the same — just with a more mature focus: understand the business before building. It's the best way I know to deliver good results.",
+            "I got into programming for the challenge of solving problems, but what really keeps me here is something else: delivering real solutions to large production systems.",
         "about.p2":
-            "Full stack by necessity, backend by vocation. That's where the real problems live: inconsistent data between systems, out-of-order events, business logic that doesn't forgive mistakes.",
+            "I work full stack, though my natural place is in the backend. That's where the problems that matter most tend to concentrate: integrations that don't quite fit, inconsistent data between systems, out-of-order events and business rules where a small mistake has real consequences.",
         "about.p3":
-            "Outside of work I publish libraries as a hobby, things I needed that didn't exist. I learn better by building than by reading, so I always have something going on.",
+            "Over time I've learned that building well isn't enough. First you have to understand the business, the context and the system's constraints. That's the most reliable way to make good technical decisions and achieve results that actually work.",
+        "about.p4":
+            "Outside of work I publish libraries as a hobby: tools I missed and decided to build. I tend to learn that way, by doing. So I almost always have some project going on.",
         "section.experience.num": "02",
         "section.experience.title": "Experience",
         "section.experience.subtitle": "CAREER",
