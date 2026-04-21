@@ -7,7 +7,14 @@ export const projects: Record<string, Project[]> = {
             title: "SGA · LUBRIMED",
             visibility: "private",
             badge: "Producción · Privado",
-            tags: ["NestJS", "RabbitMQ", "Redis", "PostgreSQL", "Docker", "Vue 3"],
+            tags: [
+                "NestJS",
+                "RabbitMQ",
+                "Redis",
+                "PostgreSQL",
+                "Docker",
+                "Vue 3",
+            ],
             stats: [
                 { label: "Tiempo ahorrado", value: "22h/día" },
                 { label: "Expediciones/día", value: "650" },
@@ -43,9 +50,9 @@ export const projects: Record<string, Project[]> = {
             badge: "Personal · Open Source",
             tags: ["TypeScript", "NestJS"],
             stats: [
-                { label: "Paquetes", value: "2 paquetes" },
-                { label: "Versión", value: "v0.1.2" },
                 { label: "Estado", value: "Activo" },
+                { label: "Plataforma", value: "Dynamics 365" },
+                { label: "Paquetes", value: "2 paquetes" },
             ],
             description:
                 "Ecosistema de librerías open source para integrar Microsoft Dynamics 365 Business Central en proyectos TypeScript/NestJS. SDK resiliente y type-safe con constructor OData fluent, rotación automática de claves y módulo NestJS plug-and-play.",
@@ -68,8 +75,8 @@ export const projects: Record<string, Project[]> = {
             badge: "Personal · Open Source",
             tags: ["TypeScript"],
             stats: [
-                { label: "Versión", value: "v0.2.3" },
                 { label: "Geocoding", value: "Nominatim" },
+                { label: "Cobertura", value: "Multi-país" },
                 { label: "Caché", value: "LRU" },
             ],
             description:
@@ -89,7 +96,14 @@ export const projects: Record<string, Project[]> = {
             title: "WMS · LUBRIMED",
             visibility: "private",
             badge: "Production · Private",
-            tags: ["NestJS", "RabbitMQ", "Redis", "PostgreSQL", "Docker", "Vue 3"],
+            tags: [
+                "NestJS",
+                "RabbitMQ",
+                "Redis",
+                "PostgreSQL",
+                "Docker",
+                "Vue 3",
+            ],
             stats: [
                 { label: "Time saved", value: "22h/day" },
                 { label: "Shipments/day", value: "650" },
@@ -125,9 +139,9 @@ export const projects: Record<string, Project[]> = {
             badge: "Personal · Open Source",
             tags: ["TypeScript", "NestJS"],
             stats: [
-                { label: "Packages", value: "2 packages" },
-                { label: "Version", value: "v0.1.2" },
                 { label: "Status", value: "Active" },
+                { label: "Platform", value: "Dynamics 365" },
+                { label: "Packages", value: "2 packages" },
             ],
             description:
                 "Open source library ecosystem for integrating Microsoft Dynamics 365 Business Central into TypeScript/NestJS projects. Resilient, type-safe SDK with fluent OData builder, automatic key rotation and plug-and-play NestJS module.",
@@ -150,9 +164,9 @@ export const projects: Record<string, Project[]> = {
             badge: "Personal · Open Source",
             tags: ["TypeScript"],
             stats: [
-                { label: "Version", value: "v0.2.3" },
                 { label: "Geocoding", value: "Nominatim" },
-                { label: "Cache", value: "LRU"},
+                { label: "Coverage", value: "Multi-country" },
+                { label: "Cache", value: "LRU" },
             ],
             description:
                 "TypeScript library for address resolution, normalization and enrichment using OpenStreetMap's Nominatim API. Built for logistics and e-commerce with multi-country support, configurable LRU cache and custom provider support.",
