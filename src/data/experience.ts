@@ -3,14 +3,33 @@ import type { ExperienceEntry } from "../types/experience";
 export const experience: Record<string, ExperienceEntry[]> = {
     es: [
         {
+            company: "Cívica",
+            totalDuration: "1 mes · Remoto",
+            location: "Remoto · España",
+            roles: [
+                {
+                    title: "Backend Developer",
+                    period: "may. 2026 – actualidad",
+                    duration: "1 mes",
+                    bullets: [
+                        "Desarrollo de microservicios backend con NestJS y TypeScript.",
+                        "Diseño e implementación de APIs REST: contratos, versionado y documentación.",
+                        "Integraciones con sistemas externos manteniendo consistencia y trazabilidad.",
+                        "Colaboración en equipo ágil multidisciplinar con ciclos de revisión y entrega continua.",
+                    ],
+                },
+            ],
+            tags: ["TypeScript", "NestJS"],
+        },
+        {
             company: "LUBRIMED SL",
-            totalDuration: "4 años · Benicarló, Valencia",
+            totalDuration: "4 años 2 meses · Benicarló, Valencia",
             location: "Benicarló, Comunidad Valenciana, España · Presencial",
             roles: [
                 {
                     title: "Lead Full Stack Developer",
-                    period: "ene. 2025 – actualidad",
-                    duration: "1 año 3 meses",
+                    period: "ene. 2025 – abr. 2026",
+                    duration: "1 año 4 meses",
                     bullets: [
                         "Gestión del departamento IT (equipo de 2 personas): planificación del roadmap y distribución de tareas.",
                         "Mantenimiento de infraestructura Docker/Portainer tanto cloud como on-premise.",
@@ -56,14 +75,33 @@ export const experience: Record<string, ExperienceEntry[]> = {
     ],
     en: [
         {
+            company: "Cívica",
+            totalDuration: "1 month · Remote",
+            location: "Remote · Spain",
+            roles: [
+                {
+                    title: "Backend Developer",
+                    period: "May 2026 – present",
+                    duration: "1 month",
+                    bullets: [
+                        "Backend microservices development with NestJS and TypeScript.",
+                        "Design and implementation of REST APIs: contracts, versioning and documentation.",
+                        "Integrations with external systems while maintaining consistency and traceability.",
+                        "Collaboration in a cross-functional agile team with continuous review and delivery cycles.",
+                    ],
+                },
+            ],
+            tags: ["TypeScript", "NestJS"],
+        },
+        {
             company: "LUBRIMED SL",
-            totalDuration: "4 years · Benicarló, Valencia",
+            totalDuration: "4 years 2 months · Benicarló, Valencia",
             location: "Benicarló, Valencian Community, Spain · On-site",
             roles: [
                 {
                     title: "Full Stack Developer & Head of IT",
-                    period: "Jan 2025 – present",
-                    duration: "1 year 3 months",
+                    period: "Jan 2025 – Apr 2026",
+                    duration: "1 year 4 months",
                     bullets: [
                         "IT department management (2-person team): roadmap planning and task distribution.",
                         "Maintenance of Docker/Portainer infrastructure, both cloud and on-premise.",
