@@ -1,0 +1,93 @@
+# Standard search engines: allow full crawl
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://chetodb.dev/sitemap-index.xml
+
+# ──────────────────────────────────────────────────────────────
+# AI training crawlers — blocked
+# (Cloudflare AI Bot block enforces this at the edge;
+#  robots.txt is a courtesy signal for compliant bots.)
+# ──────────────────────────────────────────────────────────────
+
+# OpenAI
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+# Google AI (Gemini training; Googlebot search remains allowed)
+User-agent: Google-Extended
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Disallow: /
+
+# ByteDance
+User-agent: Bytespider
+Disallow: /
+
+# Common Crawl (feeds many LLM training sets)
+User-agent: CCBot
+Disallow: /
+
+# Meta
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+# Apple (Apple Intelligence training)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Amazon
+User-agent: Amazonbot
+Disallow: /
+
+# Cohere
+User-agent: cohere-ai
+Disallow: /
+
+# Diffbot
+User-agent: Diffbot
+Disallow: /
+
+# You.com
+User-agent: YouBot
+Disallow: /
+
+# Image scrapers commonly used for training
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: Omgili
+Disallow: /
+
+# Timpi
+User-agent: TimpiBot
+Disallow: /
+
+# Mistral
+User-agent: MistralAI-User
+Disallow: /

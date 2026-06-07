@@ -1,0 +1,4 @@
+Contact: mailto:hola@chetodb.dev
+Expires: 2027-06-07T23:59:59.000Z
+Preferred-Languages: es, en
+Canonical: https://chetodb.dev/.well-known/security.txt
